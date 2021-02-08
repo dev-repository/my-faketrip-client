@@ -1,181 +1,176 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link href="/assets/css/reset.css" rel="stylesheet" />
-    <link href="/assets/css/common.css" rel="stylesheet" />
-    <link href="/assets/css/header.css" rel="stylesheet" />
-    <link href="/assets/css/main.css" rel="stylesheet" />
-    <link href="/assets/css/trip-card.css" rel="stylesheet" />
-    <link href="/assets/css/footer.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- header -->
-    <div class="header">
-      <header class="header-container white">
-        <div class="header-inner">
-          <nav class="header-nav">
-            <!-- logo -->
-            <div class="logo logo-container">
-              <a href="/">
-                <img
-                  class="logo-img"
-                  src="https://media.vlpt.us/images/jian/post/a5aa6b15-69a1-4ec2-ac59-db10e1c5eafc/faketrip.png"
-                  alt="logo"
-                />
+
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="/assets/css/reset.css" rel="stylesheet" />
+  <link href="/assets/css/common.css" rel="stylesheet" />
+  <link href="/assets/css/header.css" rel="stylesheet" />
+  <link href="/assets/css/main.css" rel="stylesheet" />
+  <link href="/assets/css/trip-card.css" rel="stylesheet" />
+  <link href="/assets/css/footer.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header">
+    <header class="header-container white">
+      <div class="header-inner">
+        <nav class="header-nav">
+          <!-- logo -->
+          <div class="logo logo-container">
+            <a href="/">
+              <img class="logo-img"
+                src="https://media.vlpt.us/images/jian/post/a5aa6b15-69a1-4ec2-ac59-db10e1c5eafc/faketrip.png"
+                alt="logo" />
+            </a>
+          </div>
+          <!-- logo -->
+          <!-- search -->
+          <div class="search-bar">
+            <div class="search-input">
+              <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="search" placeholder="도시나 상품을 검색해보세요" spellcheck="false" autocomplete="off" />
+              </div>
+            </div>
+          </div>
+          <!-- search -->
+          <!-- menu -->
+          <div class="header-menu white">
+            <div class="header-menu-item">
+              <a class="d-line-block" href="#" data-turbolinks="false">파트너 등록하기</a>
+            </div>
+            <div class="header-menu-item">
+              <a class="d-line-block" href="#" data-turbolinks="false">로그인</a>
+            </div>
+            <div class="header-menu-item">
+              <a class="d-line-block link-btn" href="#">회원가입</a>
+            </div>
+          </div>
+          <!-- menu -->
+        </nav>
+      </div>
+      <!-- header footer navigation link -->
+      <div class="header-navigation">
+        <nav class="header-navigation-container">
+          <div class="header-navigation-wrapper navigation-inner">
+            <div class="navigation-item">
+              <a href="#">
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/49_original_1608700445.png?1608700445"
+                  alt="ic_flight_40x40" />
+                <span>항공권</span>
               </a>
             </div>
-            <!-- logo -->
-            <!-- search -->
-            <div class="search-bar">
-              <div class="search-input">
-                <div class="search-container">
-                  <i class="fas fa-search"></i>
-                  <input type="search" placeholder="도시나 상품을 검색해보세요" spellcheck="false" autocomplete="off" />
-                </div>
-              </div>
+            <div class="navigation-item">
+              <a href="#">
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/50_original_1608701561.png?1608701561"
+                  alt="ic_bnb_40x40" />
+                <span>숙소</span>
+              </a>
             </div>
-            <!-- search -->
-            <!-- menu -->
-            <div class="header-menu white">
-              <div class="header-menu-item">
-                <a class="d-line-block" href="#" data-turbolinks="false">파트너 등록하기</a>
-              </div>
-              <div class="header-menu-item">
-                <a class="d-line-block" href="#" data-turbolinks="false">로그인</a>
-              </div>
-              <div class="header-menu-item">
-                <a class="d-line-block link-btn" href="#">회원가입</a>
-              </div>
+            <div class="navigation-item">
+              <a href="#">
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955"
+                  alt="ic_tour_sm" />
+                <span>투어・티켓</span>
+              </a>
             </div>
-            <!-- menu -->
-          </nav>
-        </div>
-        <!-- header footer navigation link -->
-        <div class="header-navigation">
-          <nav class="header-navigation-container">
-            <div class="header-navigation-wrapper navigation-inner">
-              <div class="navigation-item">
-                <a href="#">
-                  <img
-                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/49_original_1608700445.png?1608700445"
-                    alt="ic_flight_40x40"
-                  />
-                  <span>항공권</span>
-                </a>
-              </div>
-              <div class="navigation-item">
-                <a href="#">
-                  <img
-                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/50_original_1608701561.png?1608701561"
-                    alt="ic_bnb_40x40"
-                  />
-                  <span>숙소</span>
-                </a>
-              </div>
-              <div class="navigation-item">
-                <a href="#">
-                  <img
-                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955"
-                    alt="ic_tour_sm"
-                  />
-                  <span>투어・티켓</span>
-                </a>
-              </div>
-              <div class="divider"></div>
-              <div class="navigation-item">
-                <a href="#">
-                  <span>랜선투어</span>
-                </a>
-              </div>
-              <div class="navigation-item">
-                <a href="#">
-                  <span>할인혜택</span>
-                </a>
-              </div>
+            <div class="divider"></div>
+            <div class="navigation-item">
+              <a href="#">
+                <span>랜선투어</span>
+              </a>
             </div>
-          </nav>
-        </div>
-        <!-- header footer navigation link -->
-      </header>
-    </div>
-    <!-- header -->
-    <!-- main -->
-    <main>
-      ??
-      </main>    <!-- main -->
+            <div class="navigation-item">
+              <a href="#">
+                <span>할인혜택</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- header footer navigation link -->
+    </header>
+  </div>
+  <!-- header -->
+  <!-- main -->
+  <main>
+    ??
+  </main> <!-- main -->
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="grid-container">
-        <div class="grid-row footer-custom">
-          <div class="mrtFooter">
-            <div class="footer-container1">
-              <div class="customer">
-                <h5 class="customer-subject">고객센터 운영안내</h5>
-                <p class="customer-question">
-                  <span class="customer-word"> 평일(채팅/유선) : </span>
-                  09:00 ~ 18:00 (12시~13시 제외)
-                  <br />
-                  <span class="customer-word"> 주말/ 공휴일 : </span>
-                  채팅 상담만 가능
-                  <br />
-                  <span class="customer-word">※ 항공권 환불/변경 :</span>
-                  09:00 ~ 17:00까지 접수 가능
-                  <br />
-                  <span class="customer-word">유선 상담 : </span>
-                  1670-8208
-                </p>
-                <button class="chat-btn">1:1 채팅상담</button>
-              </div>
-            </div>
-            <div class="footer-container2">
-              <ul class="policy">
-                <li class="policy-item">
-                  <a class="policy-item2 Button-module" href="#">이용 약관</a>
-                </li>
-                <li class="policy-item">
-                  <a class="policy-item2 Button-module" href="#">개인정보 처리방침</a>
-                </li>
-                <li class="policy-item">
-                  <a class="policy-item2 Button-module" href="#">취소 및 환불정책</a>
-                </li>
-              </ul>
-              <p class="footer-copyright">
-                팀명 (주)페이크트립 | 팀장 민혜인 | 메인 프론트 한건희 | 사업자 등록번호 123-45-67891
+  <!-- footer -->
+  <footer class="footer">
+    <div class="grid-container">
+      <div class="grid-row footer-custom">
+        <div class="mrtFooter">
+          <div class="footer-container1">
+            <div class="customer">
+              <h5 class="customer-subject">고객센터 운영안내</h5>
+              <p class="customer-question">
+                <span class="customer-word"> 평일(채팅/유선) : </span>
+                09:00 ~ 18:00 (12시~13시 제외)
                 <br />
-                주소 서울특별시 마포구 신론초 176 중앙빌딩 5층 501호 | email g@naver.com | 마켓팅/제휴 문의 g@naver.com
+                <span class="customer-word"> 주말/ 공휴일 : </span>
+                채팅 상담만 가능
                 <br />
+                <span class="customer-word">※ 항공권 환불/변경 :</span>
+                09:00 ~ 17:00까지 접수 가능
                 <br />
-                자사는 서울특별시관광협회 공제영업보증보험에 가입되어 있지 않습니다. 마이페이크트립은 통신
-                판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다.
+                <span class="customer-word">유선 상담 : </span>
+                1670-8208
               </p>
+              <button class="chat-btn">1:1 채팅상담</button>
             </div>
+          </div>
+          <div class="footer-container2">
+            <ul class="policy">
+              <li class="policy-item">
+                <a class="policy-item2 Button-module" href="#">이용 약관</a>
+              </li>
+              <li class="policy-item">
+                <a class="policy-item2 Button-module" href="#">개인정보 처리방침</a>
+              </li>
+              <li class="policy-item">
+                <a class="policy-item2 Button-module" href="#">취소 및 환불정책</a>
+              </li>
+            </ul>
+            <p class="footer-copyright">
+              팀명 (주)페이크트립 | 팀장 민혜인 | 메인 프론트 한건희 | 사업자 등록번호 123-45-67891
+              <br />
+              주소 서울특별시 마포구 신론초 176 중앙빌딩 5층 501호 | email g@naver.com | 마켓팅/제휴 문의 g@naver.com
+              <br />
+              <br />
+              자사는 서울특별시관광협회 공제영업보증보험에 가입되어 있지 않습니다. 마이페이크트립은 통신
+              판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다.
+            </p>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- footer -->
+    </div>
+  </footer>
+  <!-- footer -->
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script type="text/javascript">
-      var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 20,
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        loopFillGroupWithBlank: true,
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    </script>
-  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 20,
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      loopFillGroupWithBlank: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
 </html>
