@@ -160,3 +160,69 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+label,
+input[type='checkbox'],
+input[type='radio'],
+button,
+select {
+  cursor: pointer;
+}
+
+input,
+select,
+textarea,
+label,
+button {
+  vertical-align: middle;
+}
+
+fieldset,
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+form,
+fieldset,
+input,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+legend,
+caption {
+  display: none;
+  clear: both;
+}

@@ -1,317 +1,448 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="/assets/css/reset.css" rel="stylesheet" />
+    <link href="/assets/css/common.css" rel="stylesheet" />
+    <link href="/assets/css/header.css" rel="stylesheet" />
+    <link href="/assets/css/main.css" rel="stylesheet" />
+    <link href="/assets/css/trip-card.css" rel="stylesheet" />
+    <link href="/assets/css/footer.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link href="/assets/css/reset.css" rel="stylesheet" />
-  <link href="/assets/css/common.css" rel="stylesheet" />
-  <link href="/assets/css/header.css" rel="stylesheet" />
-  <link href="/assets/css/main.css" rel="stylesheet" />
-  <link href="/assets/css/trip-card.css" rel="stylesheet" />
-  <link href="/assets/css/footer.css" rel="stylesheet" />
-</head>
-
-<body>
-  <!-- header -->
-  <div class="header">
-    <header class="header-container white">
-      <div class="header-inner">
-        <nav class="header-nav">
-          <!-- logo -->
-          <div class="logo logo-container">
-            <a href="/">
-              <img class="logo-img"
-                src="https://media.vlpt.us/images/jian/post/a5aa6b15-69a1-4ec2-ac59-db10e1c5eafc/faketrip.png"
-                alt="logo" />
-            </a>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <header class="header-container white">
+        <div class="header-inner">
+          <nav class="header-nav">
+            <!-- logo -->
+            <div class="logo logo-container">
+              <a href="/">
+                <img
+                  class="logo-img"
+                  src="https://media.vlpt.us/images/jian/post/a5aa6b15-69a1-4ec2-ac59-db10e1c5eafc/faketrip.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <!-- logo -->
+            <!-- search -->
+            <div class="search-bar">
+              <div class="search-input">
+                <div class="search-container">
+                  <i class="fas fa-search"></i>
+                  <input type="search" placeholder="도시나 상품을 검색해보세요" spellcheck="false" autocomplete="off" />
+                </div>
+              </div>
+            </div>
+            <!-- search -->
+            <!-- menu -->
+            <div class="header-menu white">
+              <div class="header-menu-item">
+                <a class="d-line-block" href="#" data-turbolinks="false">파트너 등록하기</a>
+              </div>
+              <div class="header-menu-item">
+                <a class="d-line-block" href="#" data-turbolinks="false">로그인</a>
+              </div>
+              <div class="header-menu-item">
+                <a class="d-line-block link-btn" href="#">회원가입</a>
+              </div>
+            </div>
+            <!-- menu -->
+          </nav>
+        </div>
+        <!-- header footer navigation link -->
+        <div class="header-navigation">
+          <nav class="header-navigation-container">
+            <div class="header-navigation-wrapper navigation-inner">
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/49_original_1608700445.png?1608700445"
+                    alt="ic_flight_40x40"
+                  />
+                  <span>항공권</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/50_original_1608701561.png?1608701561"
+                    alt="ic_bnb_40x40"
+                  />
+                  <span>숙소</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955"
+                    alt="ic_tour_sm"
+                  />
+                  <span>투어・티켓</span>
+                </a>
+              </div>
+              <div class="divider"></div>
+              <div class="navigation-item">
+                <a href="#">
+                  <span>랜선투어</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <span>할인혜택</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- header footer navigation link -->
+      </header>
+    </div>
+    <!-- header -->
+    <!-- main -->
+    <main>
+      <div class="main-container">
+        <!-- banner list -->
+        <section class="main-wrapper">
+          <!-- main swiper head -->
+          <div class="head-title">
+            <div class="wrapper grid">
+              <h2>어디로 떠나세요?</h2>
+              <a class="all-views-country button-module" href="#">
+                <img src="https://dffoxz5he03rp.cloudfront.net/icons/ic_all_md_blue_500.svg" alt="ic_all_md_blue_500" />
+                <span>전체보기</span>
+              </a>
+            </div>
           </div>
-          <!-- logo -->
-          <!-- search -->
-          <div class="search-bar">
-            <div class="search-input">
-              <div class="search-container">
-                <i class="fas fa-search"></i>
-                <input type="search" placeholder="도시나 상품을 검색해보세요" spellcheck="false" autocomplete="off" />
+          <!-- main swiper head -->
+          <!-- main swiper content -->
+          <div class="head-content">
+            <div class="wrapper">
+              <div class="Carousel">
+                <!-- swiperjs -->
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-card-country">
+                      <img
+                        src="https://d2ur7st6jjikze.cloudfront.net/landscapes/4890_xlarge_square_1558949569.jpg?1558949569"
+                        alt=""
+                        class="responsive-card"
+                      />
+                      <div class="gradientBackground"></div>
+                      <div class="swiper-card-country-header">
+                        <div class="title">
+                          <span>푼타 카나</span>
+                        </div>
+                        <span class="description"
+                          ><span
+                            style="
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                              -webkit-box-orient: vertical;
+                              display: -webkit-box;
+                              -webkit-line-clamp: 2;
+                            "
+                            >10여 개의 여행 상품</span
+                          ></span
+                        >
+                      </div>
+                      <a class="city-page-btn" href="/#">둘러보기</a>
+                    </div>
+                    <div class="swiper-slide swiper-card-country">
+                      <img
+                        src="https://d2ur7st6jjikze.cloudfront.net/landscapes/4744_xlarge_square_1535960572.jpg?1535960572"
+                        alt=""
+                        class="responsive-card"
+                      />
+                      <div class="gradientBackground"></div>
+                      <div class="swiper-card-country-header">
+                        <div class="title">
+                          <span>서울</span>
+                        </div>
+                        <span class="description"
+                          ><span
+                            style="
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                              -webkit-box-orient: vertical;
+                              display: -webkit-box;
+                              -webkit-line-clamp: 2;
+                            "
+                            >900여 개의 여행 상품</span
+                          ></span
+                        >
+                      </div>
+                      <a class="city-page-btn" href="/#">둘러보기</a>
+                    </div>
+                    <div class="swiper-slide swiper-card-country">
+                      <img
+                        src="https://d2ur7st6jjikze.cloudfront.net/landscapes/4737_xlarge_square_1535949304.jpg?1535949304"
+                        alt=""
+                        class="responsive-card"
+                      />
+                      <div class="gradientBackground"></div>
+                      <div class="swiper-card-country-header">
+                        <div class="title">
+                          <span>제주도</span>
+                        </div>
+                        <span class="description"
+                          ><span
+                            style="
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                              -webkit-box-orient: vertical;
+                              display: -webkit-box;
+                              -webkit-line-clamp: 2;
+                            "
+                            >2,660여 개의 여행 상품</span
+                          ></span
+                        >
+                      </div>
+                      <a class="city-page-btn" href="/#">둘러보기</a>
+                    </div>
+                    <div class="swiper-slide swiper-card-country">
+                      <img
+                        src="https://d2ur7st6jjikze.cloudfront.net/landscapes/832_xlarge_square_1493257137.jpg?1493257137"
+                        alt=""
+                        class="responsive-card"
+                      />
+                      <div class="gradientBackground"></div>
+                      <div class="swiper-card-country-header">
+                        <div class="title">
+                          <span>경기도</span>
+                        </div>
+                        <span class="description"
+                          ><span
+                            style="
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                              -webkit-box-orient: vertical;
+                              display: -webkit-box;
+                              -webkit-line-clamp: 2;
+                            "
+                            >2,120여 개의 여행 상품</span
+                          ></span
+                        >
+                      </div>
+                      <a class="city-page-btn" href="/#">둘러보기</a>
+                    </div>
+                    <div class="swiper-slide swiper-card-country">
+                      <img
+                        src="https://d2ur7st6jjikze.cloudfront.net/landscapes/455_xlarge_square_1439866837.jpg?1439866837"
+                        alt=""
+                        class="responsive-card"
+                      />
+                      <div class="gradientBackground"></div>
+                      <div class="swiper-card-country-header">
+                        <div class="title">
+                          <span>경상도</span>
+                        </div>
+                        <span class="description"
+                          ><span
+                            style="
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                              -webkit-box-orient: vertical;
+                              display: -webkit-box;
+                              -webkit-line-clamp: 2;
+                            "
+                            >2,420여 개의 여행 상품</span
+                          ></span
+                        >
+                      </div>
+                      <a class="city-page-btn" href="/#">둘러보기</a>
+                    </div>
+                    <div class="swiper-slide swiper-card-country">
+                      <img
+                        src="https://d2ur7st6jjikze.cloudfront.net/landscapes/292_xlarge_square_1430355824.jpg?1430355824"
+                        alt=""
+                        class="responsive-card"
+                      />
+                      <div class="gradientBackground"></div>
+                      <div class="swiper-card-country-header">
+                        <div class="title">
+                          <span>경주</span>
+                        </div>
+                        <span class="description"
+                          ><span
+                            style="
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                              -webkit-box-orient: vertical;
+                              display: -webkit-box;
+                              -webkit-line-clamp: 2;
+                            "
+                            >90여 개의 여행 상품</span
+                          ></span
+                        >
+                      </div>
+                      <a class="city-page-btn" href="/#">둘러보기</a>
+                    </div>
+                    <div class="swiper-slide swiper-card-country">
+                      <img
+                        src="https://d2ur7st6jjikze.cloudfront.net/landscapes/84_xlarge_square_1405351339.jpg?1405351339"
+                        alt=""
+                        class="responsive-card"
+                      />
+                      <div class="gradientBackground"></div>
+                      <div class="swiper-card-country-header">
+                        <div class="title">
+                          <span>수원</span>
+                        </div>
+                        <span class="description"
+                          ><span
+                            style="
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                              -webkit-box-orient: vertical;
+                              display: -webkit-box;
+                              -webkit-line-clamp: 2;
+                            "
+                            >30여 개의 여행 상품</span
+                          ></span
+                        >
+                      </div>
+                      <a class="city-page-btn" href="/#">둘러보기</a>
+                    </div>
+                    <div class="swiper-slide swiper-card-country">
+                      <img
+                        src="https://d2ur7st6jjikze.cloudfront.net/landscapes/599_xlarge_square_1472227370.jpg?1472227370"
+                        alt=""
+                        class="responsive-card"
+                      />
+                      <div class="gradientBackground"></div>
+                      <div class="swiper-card-country-header">
+                        <div class="title">
+                          <span>김포</span>
+                        </div>
+                        <span class="description"
+                          ><span
+                            style="
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                              -webkit-box-orient: vertical;
+                              display: -webkit-box;
+                              -webkit-line-clamp: 2;
+                            "
+                            >10여 개의 여행 상품</span
+                          ></span
+                        >
+                      </div>
+                      <a class="city-page-btn" href="/#">둘러보기</a>
+                    </div>
+                  </div>
+
+                  <!-- <div class="swiper-pagination"></div>  -->
+                  <div class="carousel-button swiper-button-prev swiper-button-black"></div>
+                  <div class="carousel-button swiper-button-next swiper-button-black"></div>
+                </div>
+                <!-- swiperjs -->
               </div>
             </div>
           </div>
-          <!-- search -->
-          <!-- menu -->
-          <div class="header-menu white">
-            <div class="header-menu-item">
-              <a class="d-line-block" href="#" data-turbolinks="false">파트너 등록하기</a>
-            </div>
-            <div class="header-menu-item">
-              <a class="d-line-block" href="#" data-turbolinks="false">로그인</a>
-            </div>
-            <div class="header-menu-item">
-              <a class="d-line-block link-btn" href="#">회원가입</a>
-            </div>
-          </div>
-          <!-- menu -->
-        </nav>
+          <!-- main swiper content -->
+        </section>
+        <!-- banner list -->
       </div>
-      <!-- header footer navigation link -->
-      <div class="header-navigation">
-        <nav class="header-navigation-container">
-          <div class="header-navigation-wrapper navigation-inner">
-            <div class="navigation-item">
-              <a href="#">
-                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/49_original_1608700445.png?1608700445"
-                  alt="ic_flight_40x40" />
-                <span>항공권</span>
-              </a>
-            </div>
-            <div class="navigation-item">
-              <a href="#">
-                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/50_original_1608701561.png?1608701561"
-                  alt="ic_bnb_40x40" />
-                <span>숙소</span>
-              </a>
-            </div>
-            <div class="navigation-item">
-              <a href="#">
-                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955"
-                  alt="ic_tour_sm" />
-                <span>투어・티켓</span>
-              </a>
-            </div>
-            <div class="divider"></div>
-            <div class="navigation-item">
-              <a href="#">
-                <span>랜선투어</span>
-              </a>
-            </div>
-            <div class="navigation-item">
-              <a href="#">
-                <span>할인혜택</span>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <!-- header footer navigation link -->
-    </header>
-  </div>
-  <!-- header -->
-  <!-- main -->
-  <main>
-    <div class="main-container">
-      <!-- banner list -->
-      <section class="main-wrapper">
-        <!-- main swiper head -->
-        <div class="head-title">
-          <div class="wrapper grid">
-            <h2>어디로 떠나세요?</h2>
-            <a class="all-views-country button-module" href="#">
-              <img src="https://dffoxz5he03rp.cloudfront.net/icons/ic_all_md_blue_500.svg" alt="ic_all_md_blue_500" />
-              <span>전체보기</span>
-            </a>
-          </div>
-        </div>
-        <!-- main swiper head -->
-        <!-- main swiper content -->
-        <div class="head-content">
-          <div class="wrapper">
-            <div class="Carousel">
-              <!-- swiperjs -->
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide swiper-card-country">
-                    <img
-                      src="https://d2ur7st6jjikze.cloudfront.net/landscapes/4890_xlarge_square_1558949569.jpg?1558949569"
-                      alt="" class="responsive-card" />
-                    <div class="gradientBackground"></div>
-                    <div class="swiper-card-country-header">
-                      <div class="title">
-                        <span>푼타 카나</span>
-                      </div>
-                      <span class="description"><span style="
-                              overflow: hidden;
-                              text-overflow: ellipsis;
-                              -webkit-box-orient: vertical;
-                              display: -webkit-box;
-                              -webkit-line-clamp: 2;
-                            ">10여 개의 여행 상품</span></span>
-                    </div>
-                    <a class="city-page-btn" href="/#">둘러보기</a>
-                  </div>
-                  <div class="swiper-slide swiper-card-country">
-                    <img
-                      src="https://d2ur7st6jjikze.cloudfront.net/landscapes/4744_xlarge_square_1535960572.jpg?1535960572"
-                      alt="" class="responsive-card" />
-                    <div class="gradientBackground"></div>
-                    <div class="swiper-card-country-header">
-                      <div class="title">
-                        <span>서울</span>
-                      </div>
-                      <span class="description"><span style="
-                              overflow: hidden;
-                              text-overflow: ellipsis;
-                              -webkit-box-orient: vertical;
-                              display: -webkit-box;
-                              -webkit-line-clamp: 2;
-                            ">900여 개의 여행 상품</span></span>
-                    </div>
-                    <a class="city-page-btn" href="/#">둘러보기</a>
-                  </div>
-                  <div class="swiper-slide swiper-card-country">
-                    <img
-                      src="https://d2ur7st6jjikze.cloudfront.net/landscapes/4737_xlarge_square_1535949304.jpg?1535949304"
-                      alt="" class="responsive-card" />
-                    <div class="gradientBackground"></div>
-                    <div class="swiper-card-country-header">
-                      <div class="title">
-                        <span>제주도</span>
-                      </div>
-                      <span class="description"><span style="
-                              overflow: hidden;
-                              text-overflow: ellipsis;
-                              -webkit-box-orient: vertical;
-                              display: -webkit-box;
-                              -webkit-line-clamp: 2;
-                            ">2,660여 개의 여행 상품</span></span>
-                    </div>
-                    <a class="city-page-btn" href="/#">둘러보기</a>
-                  </div>
-                  <div class="swiper-slide swiper-card-country">
-                    <img
-                      src="https://d2ur7st6jjikze.cloudfront.net/landscapes/832_xlarge_square_1493257137.jpg?1493257137"
-                      alt="" class="responsive-card" />
-                    <div class="gradientBackground"></div>
-                    <div class="swiper-card-country-header">
-                      <div class="title">
-                        <span>경기도</span>
-                      </div>
-                      <span class="description"><span style="
-                              overflow: hidden;
-                              text-overflow: ellipsis;
-                              -webkit-box-orient: vertical;
-                              display: -webkit-box;
-                              -webkit-line-clamp: 2;
-                            ">2,120여 개의 여행 상품</span></span>
-                    </div>
-                    <a class="city-page-btn" href="/#">둘러보기</a>
-                  </div>
-                  <div class="swiper-slide swiper-card-country">
-                    <img
-                      src="https://d2ur7st6jjikze.cloudfront.net/landscapes/455_xlarge_square_1439866837.jpg?1439866837"
-                      alt="" class="responsive-card" />
-                    <div class="gradientBackground"></div>
-                    <div class="swiper-card-country-header">
-                      <div class="title">
-                        <span>경상도</span>
-                      </div>
-                      <span class="description"><span style="
-                              overflow: hidden;
-                              text-overflow: ellipsis;
-                              -webkit-box-orient: vertical;
-                              display: -webkit-box;
-                              -webkit-line-clamp: 2;
-                            ">2,420여 개의 여행 상품</span></span>
-                    </div>
-                    <a class="city-page-btn" href="/#">둘러보기</a>
-                  </div>
-                  <div class="swiper-slide swiper-card-country">
-                    <img
-                      src="https://d2ur7st6jjikze.cloudfront.net/landscapes/292_xlarge_square_1430355824.jpg?1430355824"
-                      alt="" class="responsive-card" />
-                    <div class="gradientBackground"></div>
-                    <div class="swiper-card-country-header">
-                      <div class="title">
-                        <span>경주</span>
-                      </div>
-                      <span class="description"><span style="
-                              overflow: hidden;
-                              text-overflow: ellipsis;
-                              -webkit-box-orient: vertical;
-                              display: -webkit-box;
-                              -webkit-line-clamp: 2;
-                            ">90여 개의 여행 상품</span></span>
-                    </div>
-                    <a class="city-page-btn" href="/#">둘러보기</a>
-                  </div>
-                  <div class="swiper-slide swiper-card-country">
-                    <img
-                      src="https://d2ur7st6jjikze.cloudfront.net/landscapes/84_xlarge_square_1405351339.jpg?1405351339"
-                      alt="" class="responsive-card" />
-                    <div class="gradientBackground"></div>
-                    <div class="swiper-card-country-header">
-                      <div class="title">
-                        <span>수원</span>
-                      </div>
-                      <span class="description"><span style="
-                              overflow: hidden;
-                              text-overflow: ellipsis;
-                              -webkit-box-orient: vertical;
-                              display: -webkit-box;
-                              -webkit-line-clamp: 2;
-                            ">30여 개의 여행 상품</span></span>
-                    </div>
-                    <a class="city-page-btn" href="/#">둘러보기</a>
-                  </div>
-                  <div class="swiper-slide swiper-card-country">
-                    <img
-                      src="https://d2ur7st6jjikze.cloudfront.net/landscapes/599_xlarge_square_1472227370.jpg?1472227370"
-                      alt="" class="responsive-card" />
-                    <div class="gradientBackground"></div>
-                    <div class="swiper-card-country-header">
-                      <div class="title">
-                        <span>김포</span>
-                      </div>
-                      <span class="description"><span style="
-                              overflow: hidden;
-                              text-overflow: ellipsis;
-                              -webkit-box-orient: vertical;
-                              display: -webkit-box;
-                              -webkit-line-clamp: 2;
-                            ">10여 개의 여행 상품</span></span>
-                    </div>
-                    <a class="city-page-btn" href="/#">둘러보기</a>
-                  </div>
-                </div>
 
-                <!-- <div class="swiper-pagination"></div>  -->
-                <div class="carousel-button swiper-button-prev swiper-button-black"></div>
-                <div class="carousel-button swiper-button-next swiper-button-black"></div>
+      <!-- card list -->
+      <div class="main-offer-container">
+        <div class="main-offer-title-container">
+          <div class="offer-title">
+            <header>
+              <div>
+                <h2>최근 본 상품</h2>
               </div>
-              <!-- swiperjs -->
-            </div>
+            </header>
           </div>
         </div>
-        <!-- main swiper content -->
-      </section>
-      <!-- banner list -->
-    </div>
+        <div class="main-offer-content-container">
+          <div class="offer-content">
+            <div class="wrapper">
+              <div class="trip-card-wrapper">
+                <a class="trip-card">
+                  <div class="trip-card-thumbnail">
+                    <div class="thumbnail-wrapper">
+                      <div class="thumbnail">
+                        <img
+                          alt=""
+                          data-src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
+                          src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="trip-card-body">
+                    <div class="categorys">
+                      <div
+                        style="
+                          text-align: start;
+                          overflow: hidden;
+                          text-overflow: ellipsis;
+                          -webkit-box-orient: vertical;
+                          display: -webkit-box;
+                          -webkit-line-clamp: 1;
+                          line-height: normal;
+                        "
+                      >
+                        가이드 투어 ・ 서울
+                      </div>
+                    </div>
+                    <h3 class="card-title">
+                      <div
+                        style="
+                          text-align: start;
+                          overflow: hidden;
+                          text-overflow: ellipsis;
+                          -webkit-box-orient: vertical;
+                          display: -webkit-box;
+                          -webkit-line-clamp: 2;
+                          line-height: inherit;
+                        "
+                      >
+                        [입장티켓포함] 신기환 가이드의 덕수궁 야경투어
+                      </div>
+                    </h3>
+                    <div class="card-info">
+                      <div class="price">
+                        <span class="origin">
+                          35,000
+                          <span style="font-size: 11px">원</span>
+                        </span>
+                        <span class="sale">
+                          24,900
+                          <span style="font-size: 13px">원</span>
+                        </span>
+                        <span class="standard">/ 1인</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="trip-card-footer">
+                    <div class="likes">
+                      <i class="fas fa-heart"></i>
+                      <span>200</span>
+                    </div>
+                  </div>
+                </a>
 
-    <!-- card list -->
-    <div class="main-offer-container">
-      <div class="main-offer-title-container">
-        <div class="offer-title">
-          <header>
-            <div>
-              <h2>최근 본 상품</h2>
-            </div>
-          </header>
-        </div>
-      </div>
-      <div class="main-offer-content-container">
-        <div class="offer-content">
-          <div class="wrapper">
-            <div class="trip-card-wrapper">
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        data-src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597" />
+                <a class="trip-card">
+                  <div class="trip-card-thumbnail">
+                    <div class="thumbnail-wrapper">
+                      <div class="thumbnail">
+                        <img
+                          alt=""
+                          data-src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
+                          src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
+                  <div class="trip-card-body">
+                    <div class="categorys">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -319,12 +450,14 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 1;
                           line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
+                        "
+                      >
+                        가이드 투어 ・ 서울
+                      </div>
                     </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
+                    <h3 class="card-title">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -332,45 +465,49 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 2;
                           line-height: inherit;
-                        ">
-                      [입장티켓포함] 신기환 가이드의 덕수궁 야경투어
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
+                        "
+                      >
+                        [입장티켓포함] 신기환 가이드의 덕수궁 야경투어
+                      </div>
+                    </h3>
+                    <div class="card-info">
+                      <div class="price">
+                        <span class="origin">
+                          35,000
+                          <span style="font-size: 11px">원</span>
+                        </span>
+                        <span class="sale">
+                          24,900
+                          <span style="font-size: 13px">원</span>
+                        </span>
+                        <span class="standard">/ 1인</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
+                  <div class="trip-card-footer">
+                    <div class="likes">
+                      <i class="fas fa-heart"></i>
+                      <span>200</span>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
 
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        data-src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597" />
+                <a class="trip-card">
+                  <div class="trip-card-thumbnail">
+                    <div class="thumbnail-wrapper">
+                      <div class="thumbnail">
+                        <img
+                          alt=""
+                          data-src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
+                          src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
+                  <div class="trip-card-body">
+                    <div class="categorys">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -378,12 +515,14 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 1;
                           line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
+                        "
+                      >
+                        가이드 투어 ・ 서울
+                      </div>
                     </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
+                    <h3 class="card-title">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -391,45 +530,49 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 2;
                           line-height: inherit;
-                        ">
-                      [입장티켓포함] 신기환 가이드의 덕수궁 야경투어
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
+                        "
+                      >
+                        [입장티켓포함] 신기환 가이드의 덕수궁 야경투어
+                      </div>
+                    </h3>
+                    <div class="card-info">
+                      <div class="price">
+                        <span class="origin">
+                          35,000
+                          <span style="font-size: 11px">원</span>
+                        </span>
+                        <span class="sale">
+                          24,900
+                          <span style="font-size: 13px">원</span>
+                        </span>
+                        <span class="standard">/ 1인</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
+                  <div class="trip-card-footer">
+                    <div class="likes">
+                      <i class="fas fa-heart"></i>
+                      <span>200</span>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
 
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        data-src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597" />
+                <a class="trip-card">
+                  <div class="trip-card-thumbnail">
+                    <div class="thumbnail-wrapper">
+                      <div class="thumbnail">
+                        <img
+                          alt=""
+                          data-src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
+                          src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
+                  <div class="trip-card-body">
+                    <div class="categorys">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -437,12 +580,14 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 1;
                           line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
+                        "
+                      >
+                        가이드 투어 ・ 서울
+                      </div>
                     </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
+                    <h3 class="card-title">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -450,373 +595,67 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 2;
                           line-height: inherit;
-                        ">
-                      [입장티켓포함] 신기환 가이드의 덕수궁 야경투어
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
-                  </div>
-                </div>
-              </a>
-
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        data-src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597"
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82720/541777_medium_1602579597.jpg?1602579597" />
+                        "
+                      >
+                        [입장티켓포함] 신기환 가이드의 덕수궁 야경투어
+                      </div>
+                    </h3>
+                    <div class="card-info">
+                      <div class="price">
+                        <span class="origin">
+                          35,000
+                          <span style="font-size: 11px">원</span>
+                        </span>
+                        <span class="sale">
+                          24,900
+                          <span style="font-size: 13px">원</span>
+                        </span>
+                        <span class="standard">/ 1인</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
-                          text-align: start;
-                          overflow: hidden;
-                          text-overflow: ellipsis;
-                          -webkit-box-orient: vertical;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 1;
-                          line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
+                  <div class="trip-card-footer">
+                    <div class="likes">
+                      <i class="fas fa-heart"></i>
+                      <span>200</span>
                     </div>
                   </div>
-                  <h3 class="card-title">
-                    <div style="
-                          text-align: start;
-                          overflow: hidden;
-                          text-overflow: ellipsis;
-                          -webkit-box-orient: vertical;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 2;
-                          line-height: inherit;
-                        ">
-                      [입장티켓포함] 신기환 가이드의 덕수궁 야경투어
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- card list -->
-    <div class="main-offer-container">
-      <div class="main-offer-title-container">
-        <div class="offer-title">
-          <header>
-            <div>
-              <h2>방구석 랜선투어 💻</h2>
-            </div>
-          </header>
-        </div>
-      </div>
-      <div class="main-offer-content-container">
-        <div class="offer-content">
-          <div class="wrapper">
-            <div class="trip-card-wrapper">
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/99618/541639_medium_1602487798.jpg?1602487798" />
-                    </div>
-                  </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
-                          text-align: start;
-                          overflow: hidden;
-                          text-overflow: ellipsis;
-                          -webkit-box-orient: vertical;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 1;
-                          line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
-                    </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
-                          text-align: start;
-                          overflow: hidden;
-                          text-overflow: ellipsis;
-                          -webkit-box-orient: vertical;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 2;
-                          line-height: inherit;
-                        ">
-                      [랜선투어:현지 Live] 권승완+성예은 가이드의 스페인 바르셀로나
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
-                  </div>
-                </div>
-              </a>
-
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/101129/549311_medium_1608545579.jpg?1608545579" />
-                    </div>
-                  </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
-                          text-align: start;
-                          overflow: hidden;
-                          text-overflow: ellipsis;
-                          -webkit-box-orient: vertical;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 1;
-                          line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
-                    </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
-                          text-align: start;
-                          overflow: hidden;
-                          text-overflow: ellipsis;
-                          -webkit-box-orient: vertical;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 2;
-                          line-height: inherit;
-                        ">
-                      [랜선투어:현지 Live] 장재영+고은경 가이드의 Across 이스탄불(2/9 오후 9시)
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
-                  </div>
-                </div>
-              </a>
-
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/102412/553355_medium_1611821830.jpg?1611821830" />
-                    </div>
-                  </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
-                          text-align: start;
-                          overflow: hidden;
-                          text-overflow: ellipsis;
-                          -webkit-box-orient: vertical;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 1;
-                          line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
-                    </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
-                          text-align: start;
-                          overflow: hidden;
-                          text-overflow: ellipsis;
-                          -webkit-box-orient: vertical;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 2;
-                          line-height: inherit;
-                        ">
-                      [랜선투어] 정보경 셰프의 나폴리 미식 여행(2/18, 2/25 저녁7시)
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
-                  </div>
-                </div>
-              </a>
-
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/101684/551210_medium_1609922010.jpg?1609922010" />
-                    </div>
-                  </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
-                          text-align: start;
-                          overflow: hidden;
-                          text-overflow: ellipsis;
-                          -webkit-box-orient: vertical;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 1;
-                          line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
-                    </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
-                          text-align: start;
-                          overflow: hidden;
-                          text-overflow: ellipsis;
-                          -webkit-box-orient: vertical;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 2;
-                          line-height: inherit;
-                        ">
-                      [랜선투어:현지 Live] 맥스 가이드의 마카오 인사이드 (2/13 오후 6시)
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
-                  </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- card list -->
-    <div class="main-offer-container">
-      <div class="main-offer-title-container">
-        <div class="offer-title">
-          <header>
-            <div>
-              <h2>전국 핫플 최저가 🎠</h2>
-            </div>
-          </header>
+      <!-- card list -->
+      <div class="main-offer-container">
+        <div class="main-offer-title-container">
+          <div class="offer-title">
+            <header>
+              <div>
+                <h2>방구석 랜선투어 💻</h2>
+              </div>
+            </header>
+          </div>
         </div>
-      </div>
-      <div class="main-offer-content-container">
-        <div class="offer-content">
-          <div class="wrapper">
-            <div class="trip-card-wrapper">
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/99618/541639_medium_1602487798.jpg?1602487798" />
+        <div class="main-offer-content-container">
+          <div class="offer-content">
+            <div class="wrapper">
+              <div class="trip-card-wrapper">
+                <a class="trip-card">
+                  <div class="trip-card-thumbnail">
+                    <div class="thumbnail-wrapper">
+                      <div class="thumbnail">
+                        <img
+                          alt=""
+                          src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/99618/541639_medium_1602487798.jpg?1602487798"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
+                  <div class="trip-card-body">
+                    <div class="categorys">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -824,12 +663,14 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 1;
                           line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
+                        "
+                      >
+                        가이드 투어 ・ 서울
+                      </div>
                     </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
+                    <h3 class="card-title">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -837,44 +678,48 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 2;
                           line-height: inherit;
-                        ">
-                      [랜선투어:현지 Live] 권승완+성예은 가이드의 스페인 바르셀로나
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
+                        "
+                      >
+                        [랜선투어:현지 Live] 권승완+성예은 가이드의 스페인 바르셀로나
+                      </div>
+                    </h3>
+                    <div class="card-info">
+                      <div class="price">
+                        <span class="origin">
+                          35,000
+                          <span style="font-size: 11px">원</span>
+                        </span>
+                        <span class="sale">
+                          24,900
+                          <span style="font-size: 13px">원</span>
+                        </span>
+                        <span class="standard">/ 1인</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
+                  <div class="trip-card-footer">
+                    <div class="likes">
+                      <i class="fas fa-heart"></i>
+                      <span>200</span>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
 
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/101129/549311_medium_1608545579.jpg?1608545579" />
+                <a class="trip-card">
+                  <div class="trip-card-thumbnail">
+                    <div class="thumbnail-wrapper">
+                      <div class="thumbnail">
+                        <img
+                          alt=""
+                          src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/101129/549311_medium_1608545579.jpg?1608545579"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
+                  <div class="trip-card-body">
+                    <div class="categorys">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -882,12 +727,14 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 1;
                           line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
+                        "
+                      >
+                        가이드 투어 ・ 서울
+                      </div>
                     </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
+                    <h3 class="card-title">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -895,44 +742,48 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 2;
                           line-height: inherit;
-                        ">
-                      [랜선투어:현지 Live] 장재영+고은경 가이드의 Across 이스탄불(2/9 오후 9시)
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
+                        "
+                      >
+                        [랜선투어:현지 Live] 장재영+고은경 가이드의 Across 이스탄불(2/9 오후 9시)
+                      </div>
+                    </h3>
+                    <div class="card-info">
+                      <div class="price">
+                        <span class="origin">
+                          35,000
+                          <span style="font-size: 11px">원</span>
+                        </span>
+                        <span class="sale">
+                          24,900
+                          <span style="font-size: 13px">원</span>
+                        </span>
+                        <span class="standard">/ 1인</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
+                  <div class="trip-card-footer">
+                    <div class="likes">
+                      <i class="fas fa-heart"></i>
+                      <span>200</span>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
 
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/102412/553355_medium_1611821830.jpg?1611821830" />
+                <a class="trip-card">
+                  <div class="trip-card-thumbnail">
+                    <div class="thumbnail-wrapper">
+                      <div class="thumbnail">
+                        <img
+                          alt=""
+                          src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/102412/553355_medium_1611821830.jpg?1611821830"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
+                  <div class="trip-card-body">
+                    <div class="categorys">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -940,12 +791,14 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 1;
                           line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
+                        "
+                      >
+                        가이드 투어 ・ 서울
+                      </div>
                     </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
+                    <h3 class="card-title">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -953,44 +806,48 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 2;
                           line-height: inherit;
-                        ">
-                      [랜선투어] 정보경 셰프의 나폴리 미식 여행(2/18, 2/25 저녁7시)
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
+                        "
+                      >
+                        [랜선투어] 정보경 셰프의 나폴리 미식 여행(2/18, 2/25 저녁7시)
+                      </div>
+                    </h3>
+                    <div class="card-info">
+                      <div class="price">
+                        <span class="origin">
+                          35,000
+                          <span style="font-size: 11px">원</span>
+                        </span>
+                        <span class="sale">
+                          24,900
+                          <span style="font-size: 13px">원</span>
+                        </span>
+                        <span class="standard">/ 1인</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
+                  <div class="trip-card-footer">
+                    <div class="likes">
+                      <i class="fas fa-heart"></i>
+                      <span>200</span>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
 
-              <a class="trip-card">
-                <div class="trip-card-thumbnail">
-                  <div class="thumbnail-wrapper">
-                    <div class="thumbnail">
-                      <img alt=""
-                        src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/101684/551210_medium_1609922010.jpg?1609922010" />
+                <a class="trip-card">
+                  <div class="trip-card-thumbnail">
+                    <div class="thumbnail-wrapper">
+                      <div class="thumbnail">
+                        <img
+                          alt=""
+                          src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/101684/551210_medium_1609922010.jpg?1609922010"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-body">
-                  <div class="categorys">
-                    <div style="
+                  <div class="trip-card-body">
+                    <div class="categorys">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -998,12 +855,14 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 1;
                           line-height: normal;
-                        ">
-                      가이드 투어 ・ 서울
+                        "
+                      >
+                        가이드 투어 ・ 서울
+                      </div>
                     </div>
-                  </div>
-                  <h3 class="card-title">
-                    <div style="
+                    <h3 class="card-title">
+                      <div
+                        style="
                           text-align: start;
                           overflow: hidden;
                           text-overflow: ellipsis;
@@ -1011,111 +870,111 @@
                           display: -webkit-box;
                           -webkit-line-clamp: 2;
                           line-height: inherit;
-                        ">
-                      [랜선투어:현지 Live] 맥스 가이드의 마카오 인사이드 (2/13 오후 6시)
-                    </div>
-                  </h3>
-                  <div class="card-info">
-                    <div class="price">
-                      <span class="origin">
-                        35,000
-                        <span style="font-size: 11px">원</span>
-                      </span>
-                      <span class="sale">
-                        24,900
-                        <span style="font-size: 13px">원</span>
-                      </span>
-                      <span class="standard">/ 1인</span>
+                        "
+                      >
+                        [랜선투어:현지 Live] 맥스 가이드의 마카오 인사이드 (2/13 오후 6시)
+                      </div>
+                    </h3>
+                    <div class="card-info">
+                      <div class="price">
+                        <span class="origin">
+                          35,000
+                          <span style="font-size: 11px">원</span>
+                        </span>
+                        <span class="sale">
+                          24,900
+                          <span style="font-size: 13px">원</span>
+                        </span>
+                        <span class="standard">/ 1인</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="trip-card-footer">
-                  <div class="likes">
-                    <i class="fas fa-heart"></i>
-                    <span>200</span>
+                  <div class="trip-card-footer">
+                    <div class="likes">
+                      <i class="fas fa-heart"></i>
+                      <span>200</span>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <!-- main -->
+    </main>
+    <!-- main -->
 
-  <!-- footer -->
-  <footer class="footer">
-    <div class="grid-container">
-      <div class="grid-row footer-custom">
-        <div class="mrtFooter">
-          <div class="footer-container1">
-            <div class="customer">
-              <h5 class="customer-subject">고객센터 운영안내</h5>
-              <p class="customer-question">
-                <span class="customer-word"> 평일(채팅/유선) : </span>
-                09:00 ~ 18:00 (12시~13시 제외)
+    <!-- footer -->
+    <footer class="footer">
+      <div class="grid-container">
+        <div class="grid-row footer-custom">
+          <div class="mrtFooter">
+            <div class="footer-container1">
+              <div class="customer">
+                <h5 class="customer-subject">고객센터 운영안내</h5>
+                <p class="customer-question">
+                  <span class="customer-word"> 평일(채팅/유선) : </span>
+                  09:00 ~ 18:00 (12시~13시 제외)
+                  <br />
+                  <span class="customer-word"> 주말/ 공휴일 : </span>
+                  채팅 상담만 가능
+                  <br />
+                  <span class="customer-word">※ 항공권 환불/변경 :</span>
+                  09:00 ~ 17:00까지 접수 가능
+                  <br />
+                  <span class="customer-word">유선 상담 : </span>
+                  1670-8208
+                </p>
+                <button class="chat-btn">1:1 채팅상담</button>
+              </div>
+            </div>
+            <div class="footer-container2">
+              <ul class="policy">
+                <li class="policy-item">
+                  <a class="policy-item2 Button-module" href="#">이용 약관</a>
+                </li>
+                <li class="policy-item">
+                  <a class="policy-item2 Button-module" href="#">개인정보 처리방침</a>
+                </li>
+                <li class="policy-item">
+                  <a class="policy-item2 Button-module" href="#">취소 및 환불정책</a>
+                </li>
+              </ul>
+              <p class="footer-copyright">
+                팀명 (주)페이크트립 | 팀장 민혜인 | 메인 프론트 한건희 | 사업자 등록번호 123-45-67891
                 <br />
-                <span class="customer-word"> 주말/ 공휴일 : </span>
-                채팅 상담만 가능
+                주소 서울특별시 마포구 신론초 176 중앙빌딩 5층 501호 | email g@naver.com | 마켓팅/제휴 문의 g@naver.com
                 <br />
-                <span class="customer-word">※ 항공권 환불/변경 :</span>
-                09:00 ~ 17:00까지 접수 가능
                 <br />
-                <span class="customer-word">유선 상담 : </span>
-                1670-8208
+                자사는 서울특별시관광협회 공제영업보증보험에 가입되어 있지 않습니다. 마이페이크트립은 통신
+                판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다.
               </p>
-              <button class="chat-btn">1:1 채팅상담</button>
             </div>
-          </div>
-          <div class="footer-container2">
-            <ul class="policy">
-              <li class="policy-item">
-                <a class="policy-item2 Button-module" href="#">이용 약관</a>
-              </li>
-              <li class="policy-item">
-                <a class="policy-item2 Button-module" href="#">개인정보 처리방침</a>
-              </li>
-              <li class="policy-item">
-                <a class="policy-item2 Button-module" href="#">취소 및 환불정책</a>
-              </li>
-            </ul>
-            <p class="footer-copyright">
-              팀명 (주)페이크트립 | 팀장 민혜인 | 메인 프론트 한건희 | 사업자 등록번호 123-45-67891
-              <br />
-              주소 서울특별시 마포구 신론초 176 중앙빌딩 5층 501호 | email g@naver.com | 마켓팅/제휴 문의 g@naver.com
-              <br />
-              <br />
-              자사는 서울특별시관광협회 공제영업보증보험에 가입되어 있지 않습니다. 마이페이크트립은 통신
-              판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다.
-            </p>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- footer -->
+    </footer>
+    <!-- footer -->
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script type="text/javascript">
-    var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 20,
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-      loopFillGroupWithBlank: true,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-</body>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript">
+      var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        loopFillGroupWithBlank: true,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
 </html>
