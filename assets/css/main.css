@@ -98,7 +98,7 @@
 }
 
 .swiper-slide {
-  text-align: center;
+  /* text-align: center; */
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,16 +118,17 @@
   height: 100%;
   position: relative;
   width: 100%;
+  margin-left: -1.25rem;
 }
 
 .swiper-card-country {
   position: relative;
   display: inline-block;
-  width: 250px !important;
+  width: 253px !important;
   height: 333px;
   border-radius: 8px;
   overflow: hidden;
-  /* box-shadow: 0 8px 12px 0 rgb(33 37 41 / 15%); */
+  box-shadow: 0 8px 12px 0 rgb(33 37 41 / 15%);
   z-index: 0;
   cursor: pointer;
 }
@@ -240,8 +241,10 @@
   position: absolute;
   text-align: center;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  /* -ms-transform: translateY(-50%); */
+  /* transform: translateY(-50%); */
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
   width: 40px;
   z-index: 10;
   transition: 0.2s;
@@ -302,7 +305,4 @@
   left: -10px;
   position: relative;
   width: 1080px;
-}
-
-.main-offer-item {
 }
