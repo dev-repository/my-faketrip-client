@@ -234,3 +234,92 @@ html input {
   cursor: default;
 }
 /*joinform,loginform.css*/
+/* regions.css*/
+main {
+  position: relative;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+/* @media screen and (max-width: 1199px) and (min-width: 992px)
+.destination-header .header-container .content {
+    width: 944px;
+}
+@media screen and (max-width: 1199px) and (min-width: 992px)
+.header-container .content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    color: #fff;
+    text-align: center;
+    width: 664px;
+} */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+ol ol, ul ul, ol ul, ul ol {
+  margin-bottom: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+/* my-info */
+main {
+  position: relative;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+img {
+  border-width: 0;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+img {
+  border: 0;
+}
+a, a:active, a:hover, a:link, a:visited {
+  text-decoration: none;
+}
+img {
+  border-width: 0;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+img {
+  border: 0;
+}
+
+
+
+
+
+
+
