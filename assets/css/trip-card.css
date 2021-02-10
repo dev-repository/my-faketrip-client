@@ -1,14 +1,11 @@
 .trip-card-wrapper {
   display: flex;
   flex-wrap: wrap;
-}
-
-.trip-card + .trip-card {
-  margin-left: 1rem;
+  margin: -1rem;
 }
 
 .trip-card {
-  height: 311px;
+  height: 345px;
   width: 260px !important;
 
   border-radius: 4px;
@@ -16,6 +13,9 @@
   display: inline-block;
   position: relative;
   transition: all 0.15s ease-out !important;
+  margin-top: 0.25rem;
+  margin-bottom: 1.25rem;
+  margin-right: 1rem;
 }
 
 .trip-card:after {

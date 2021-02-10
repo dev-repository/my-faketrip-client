@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="/assets/css/reset.css" rel="stylesheet" />
+    <link href="/assets/css/common.css" rel="stylesheet" />
+    <link href="/assets/css/header.css" rel="stylesheet" />
+    <link href="/assets/css/airline-ticket.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="header">
+      <header class="header-container white">
+        <div class="header-inner">
+          <nav class="header-nav">
+            <!-- logo -->
+            <div class="logo logo-container">
+              <a href="/">
+                <img
+                  class="logo-img"
+                  src="https://media.vlpt.us/images/jian/post/a5aa6b15-69a1-4ec2-ac59-db10e1c5eafc/faketrip.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <!-- logo -->
+            <!-- search -->
+            <div class="search-bar">
+              <div class="search-input">
+                <div class="search-container">
+                  <i class="fas fa-search"></i>
+                  <input type="search" placeholder="도시나 상품을 검색해보세요" spellcheck="false" autocomplete="off" />
+                </div>
+              </div>
+            </div>
+            <!-- search -->
+            <!-- menu -->
+            <div class="header-menu white">
+              <div class="header-menu-item">
+                <a class="d-line-block" href="#" data-turbolinks="false">파트너 등록하기</a>
+              </div>
+              <div class="header-menu-item">
+                <a class="d-line-block" href="#" data-turbolinks="false">로그인</a>
+              </div>
+              <div class="header-menu-item">
+                <a class="d-line-block link-btn" href="#">회원가입</a>
+              </div>
+            </div>
+            <!-- menu -->
+          </nav>
+        </div>
+        <!-- header footer navigation link -->
+        <div class="header-navigation">
+          <nav class="header-navigation-container">
+            <div class="header-navigation-wrapper navigation-inner">
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/49_original_1608700445.png?1608700445"
+                    alt="ic_flight_40x40"
+                  />
+                  <span>항공권</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/50_original_1608701561.png?1608701561"
+                    alt="ic_bnb_40x40"
+                  />
+                  <span>숙소</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955"
+                    alt="ic_tour_sm"
+                  />
+                  <span>투어・티켓</span>
+                </a>
+              </div>
+              <div class="divider"></div>
+              <div class="navigation-item">
+                <a href="#">
+                  <span>랜선투어</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <span>할인혜택</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- header footer navigation link -->
+      </header>
+    </div>
+    <!-- header -->
+
+    <!-- ticket page -->
+    <!-- search -->
+    <div class="ticket_search_container">
+      <div class="airline-ticket-search-container">
+        <div class="title">
+          <span>왕복</span>
+        </div>
+        <div class="ticket-search-container">
+          <div class="travel">
+            <div class="departure">
+              <span>인천(ICN)</span>
+            </div>
+            <div class="change">
+              <button type="button">
+                <i class="fas fa-exchange-alt"></i>
+              </button>
+            </div>
+            <div class="arrival">
+              <span>제주(CJU)</span>
+            </div>
+          </div>
+          <div class="date-container">
+            <i class="far fa-calendar"></i>
+            <input type="text" name="dates" class="form-control" />
+          </div>
+          <div class="passenger">
+            <i class="far fa-user"></i>
+            <span> 승객 1명, 전체</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <button class="search-button">
+            <span>검색</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- search -->
+    <div class="ticket_list_container">
+      <div class="ticket_list_information">
+        <!-- aside -->
+        <div class="ariline-ticket-aside-container">
+          <div class="aside-content">
+            <h3 class="title">
+              <span>항공사</span>
+              <i class="fas fa-angle-up"></i>
+            </h3>
+            <div class="list">
+              <!-- select -->
+              <ul class="mrt_select_all">
+                <li>
+                  <button type="button" title="모두선택" class="active">모두 선택</button>
+                </li>
+                <li>
+                  <button type="button" title="모두해제">모두 해제</button>
+                </li>
+              </ul>
+              <!-- select -->
+              <ul id="checkAirList">
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input type="checkbox" id="airCd0" name="airCd0" class="k1_input_check" value=".aircdKE" /><label
+                      for="airCd0"
+                      ><span class="ico_checkbox"></span>대한항공</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input type="checkbox" id="airCd75" name="airCd75" class="k1_input_check" value=".aircdOZ" /><label
+                      for="airCd75"
+                      ><span class="ico_checkbox"></span>아시아나항공</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input
+                      type="checkbox"
+                      id="airCd124"
+                      name="airCd124"
+                      class="k1_input_check"
+                      value=".aircdLJ"
+                    /><label for="airCd124"><span class="ico_checkbox"></span>진에어</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input
+                      type="checkbox"
+                      id="airCd151"
+                      name="airCd151"
+                      class="k1_input_check"
+                      value=".aircdBX"
+                    /><label for="airCd151"><span class="ico_checkbox"></span>에어부산</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input
+                      type="checkbox"
+                      id="airCd163"
+                      name="airCd163"
+                      class="k1_input_check"
+                      value=".aircdTW"
+                    /><label for="airCd163"><span class="ico_checkbox"></span>티웨이항공</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input
+                      type="checkbox"
+                      id="airCd195"
+                      name="airCd195"
+                      class="k1_input_check"
+                      value=".aircd7C"
+                    /><label for="airCd195"><span class="ico_checkbox"></span>제주항공</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input
+                      type="checkbox"
+                      id="airCd236"
+                      name="airCd236"
+                      class="k1_input_check"
+                      value=".aircdRS"
+                    /><label for="airCd236"><span class="ico_checkbox"></span>에어서울</label>
+                  </div>
+                </li>
+              </ul>
+              <!-- select -->
+            </div>
+          </div>
+          <div class="aside-content">
+            <h3 class="title">
+              <span>출발시간</span>
+              <i class="fas fa-angle-up"></i>
+            </h3>
+            <div class="list">
+              <ul>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input type="checkbox" class="k1_input_check" value=".aircdKE" /><label for="airCd0"
+                      ><span class="ico_checkbox"></span>새벽 00:00~06:00</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input type="checkbox" class="k1_input_check" value=".aircdOZ" /><label for="airCd75"
+                      ><span class="ico_checkbox"></span>오전 06:00~12:00</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input type="checkbox" class="k1_input_check" value=".aircdLJ" /><label for="airCd124"
+                      ><span class="ico_checkbox"></span>오후 12:00~18:00</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input type="checkbox" class="k1_input_check" value=".aircdLJ" /><label for="airCd124"
+                      ><span class="ico_checkbox"></span>야간 18:00~24:00</label
+                    >
+                  </div>
+                </li>
+              </ul>
+              <!-- select -->
+            </div>
+          </div>
+          <div class="aside-content">
+            <h3 class="title">
+              <span>좌석종류</span>
+              <i class="fas fa-angle-up"></i>
+            </h3>
+            <div class="list">
+              <ul>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input type="checkbox" class="k1_input_check" value=".aircdKE" /><label for="airCd0"
+                      ><span class="ico_checkbox"></span>비즈니스석</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input type="checkbox" class="k1_input_check" value=".aircdOZ" /><label for="airCd75"
+                      ><span class="ico_checkbox"></span>특가석</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input type="checkbox" class="k1_input_check" value=".aircdLJ" /><label for="airCd124"
+                      ><span class="ico_checkbox"></span>할인석</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="mrt_check_wrap">
+                    <input type="checkbox" class="k1_input_check" value=".aircdLJ" /><label for="airCd124"
+                      ><span class="ico_checkbox"></span>일반석</label
+                    >
+                  </div>
+                </li>
+              </ul>
+              <!-- select -->
+            </div>
+          </div>
+          <div class="aside-content">
+            <h3 class="title">
+              <span>가격대</span>
+              <i class="fas fa-angle-up"></i>
+            </h3>
+            <div class="list">
+              <label for="customRange1" class="form-label" style="font-size: 17px">182,100원 미만</label>
+              <input type="range" class="form-range" id="customRange1" style="width: 100%" />
+            </div>
+          </div>
+        </div>
+        <!-- aside -->
+        <div class="airline-ticket-main-container">
+          <!-- search result N select filter -->
+          <div class="header-result-filter-container">
+            <div class="result-information">
+              <h3>검색결과 총 10개</h3>
+              <p>성인 1인 기준 편도 요금입니다. (세금 및 수수료 포함)</p>
+            </div>
+            <div class="result-filter">
+              <select class="form-control">
+                <option value="1">가격 낮은 순</option>
+                <option value="2">가격 높은 순</option>
+                <option value="3">출발 시간 빠른 순</option>
+              </select>
+            </div>
+          </div>
+          <!-- search result N select filter -->
+          <div>
+            <!-- result line -->
+            <div class="sorted-informaton-container">
+              <div class="information-container">
+                <span class="tag-area sorted-margin">가는편</span>
+                <div class="departure-and-arrival sorted-margin">
+                  <strong>김포</strong>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <strong>제주</strong>
+                </div>
+                <span class="airline-date">02월11일(목)</span>
+              </div>
+            </div>
+            <!-- result line -->
+            <div class="result-element-container">
+              <div class="ticket-flex-item">
+                <div class="airline-ticket-left-info">
+                  <img src="https://flights.myrealtrip.com/air/wfw/imgs/mbl/logo/air/LJ.png" alt="logo" />
+                  <div class="airline">
+                    <em>진에어</em>
+                    <em class="num">LJ321</em>
+                  </div>
+                </div>
+                <div class="airline-ticket-timeline-center-info">
+                  <div class="departure">
+                    <span>18:15</span>
+                    <span>GMP</span>
+                  </div>
+                  <div class="time">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <span>1시간 15분</span>
+                  </div>
+                  <div class="arrival">
+                    <span>19:30</span>
+                    <span>CJU</span>
+                  </div>
+                </div>
+                <div class="airline-ticket-seat">
+                  <span class="seat-class">특가석</span>
+                  <span class="seat-num">9석</span>
+                </div>
+                <div class="airline-ticket-price">
+                  <span class="total">23,000원</span>
+                </div>
+                <button type="button">선택</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ticket page -->
+    <script type="text/javascript">
+      $('input[name="dates"]').daterangepicker();
+    </script>
+  </body>
+</html>

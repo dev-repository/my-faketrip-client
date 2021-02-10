@@ -1,4 +1,8 @@
 {
-    "editor.formatOnSave": true,
-    "liveServer.settings.port": 5501
+  "editor.formatOnSave": true,
+  "prettier.semi": true,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2
 }
