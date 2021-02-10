@@ -1,0 +1,48 @@
+.loginform {
+  width: 430px;
+  padding: 48px;
+  margin: 64px auto;
+  border: 1px solid #dee2e6;
+  border-radius: 2px;
+}
+.loginform-text {
+  margin-bottom: 8px;
+}
+.loginform-input {
+  margin-bottom: 16px;
+}
+.find {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.findId {
+  font-size: 13px;
+  color: #666d75;
+  margin-left: 60px;
+}
+.findPw {
+  font-size: 13px;
+  color: #666d75;
+  margin-right: 60px;
+}
+.sinup-btn {
+  margin-bottom: 16px;
+}
+.sinup-link {
+  width: 100%;
+  text-align: center;
+}
+.sinup-join {
+  font-size: 12px;
+  color: #666d75;
+}
+.sinup-join-link {
+  font-size: 12px;
+  color: #666d75;
+  text-decoration: underline;
+  margin-left: 4px;
+}
