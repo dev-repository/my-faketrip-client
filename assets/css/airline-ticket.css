@@ -1,194 +1,199 @@
-.airline-search {
-  transition: height 0.3s;
+.ticket_search_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  background-color: #51abf3;
 }
 
-.airline-search-area {
-  position: relative;
-  border: none;
-  padding: 165px 0 56px;
-  background: url(https://flights.myrealtrip.com/air/imgs_ibe/mrt/bg/bg_header_pc.jpg) no-repeat center;
-  background-size: cover;
+.ticket_list_container {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 90px);
+  padding-top: 20px;
 }
 
-.airline-search-area .airline-search-are-spot {
-  position: relative;
-  width: 1064px;
-  margin: 0 auto;
+.ticket_list_container .ticket_list_information {
+  display: flex;
+  width: 64%;
 }
 
-.airline-search-section-1 {
-  height: auto;
-  overflow: hidden;
-  margin-bottom: 17px;
+
+.airline-ticket-search-container {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 70%;
+	height: 80%;
+	position: relative;
 }
 
-.airline-search-section-1 .interval_select {
+.airline-ticket-search-container > div {
+	width: 92%;
+}
+
+.airline-ticket-search-container > div > div, button {
+  margin: 0 2px;
+}
+
+.airline-ticket-search-container > div > div, button:first-child {
   margin-left: 0;
-  height: auto;
-  line-height: normal;
-  padding: 0;
 }
 
-.airline-search-section-1 li {
-  float: left;
-  overflow: hidden;
+.airline-ticket-search-container .title {
+  padding-bottom: 10px;
 }
 
-.airline-search-section-1 li input.input_radio {
-  display: none;
-  width: 0;
-  height: 0;
+.airline-ticket-search-container .title span {
+  width: 100%;
+	height: 20px;
+  font-size: 1.5rem;
+	color: #fff;
+	font-weight: bold;
 }
 
-.airline-search-section-1 li input.input_radio {
-  margin-right: 5px;
+.airline-ticket-search-container > .ticket-search-container {
+  position: relative;
+	display: flex;
+	height: calc(100% - 30px);
 }
 
-.airline-search-section-1 li input.input_radio:checked + label {
-  color: #fff;
-  opacity: 1;
-  font-weight: bold;
-  border-bottom: 2px solid #fff;
-}
-
-.airline-search-section-1 li label {
-  float: left;
-  display: inline-block;
-  width: 64px;
-  /* height: 20px; */
-  line-height: 20px;
-  padding-bottom: 8px;
-  margin-right: 8px;
-  background-color: transparent;
-  color: #fff;
-  opacity: 0.5;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer /*;-webkit-transition: all .2s ease;transition: all .2s ease;*/;
-}
-
-.airline-search-section-1 li:after {
-  content: '.';
-  display: block;
-  height: 0px;
-  clear: both;
-  visibility: hidden;
-}
-
-.airline-search-section-1 .extra-link {
-  float: right;
-}
-
-.airline-search-section-1 li {
-  float: left;
-  overflow: hidden;
-}
-
-.airline-search-section-1 .extra-link a {
-  height: 20px;
-  line-height: 20px;
-  padding: 0 21px 6px 0;
-  color: #fff;
-  font-size: 15px;
-  font-weight: bold;
-  background: url(https://flights.myrealtrip.com/air/imgs_ibe/mrt/ico/main/ico_circle_right.png) no-repeat right 0 top
-    2px;
-  background-size: 16px 16px;
-}
-
-.airline-search-section-multi {
-  padding: 0;
-  margin-top: 0;
-  background-color: transparent;
-}
-
-.airline-search-section-multi {
-  margin-top: 5px;
-  padding: 6px 20px;
-  background: #f1f1f1;
-}
-
-.clearfix li {
-  padding: 0;
-  height: auto;
-}
-.clearfix li {
-  padding: 3px 0;
-  height: 19px;
-  line-height: 1.2em;
-}
-
-.mrt_border_all {
-  border-radius: 2px;
-  border: 1px solid #dee2e6;
-  box-sizing: border-box;
-}
-
-.mrt_city_selector,
-.mrt_date_selector,
-.mrt_seat_wrap {
-  border: none !important;
-}
-
-.mrt_city_selector {
-  float: left;
-  width: 422px;
-  height: 48px;
-  line-height: 48px;
+.travel {
+  display: flex;
   background-color: #fff;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  flex: 1.6;
+  border-radius: 2px;
 }
 
-.clearfix {
-  display: block;
+.departure,
+.arrival {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  flex: 1;
+  cursor: pointer;
 }
 
-.airline-search-area .airline-search-are-spot input[type='text'].k1_input_text {
-  padding-top: 0;
-  padding-bottom: 0;
-  line-height: 48px;
-  transition: none;
-}
-
-.mrt_city_selector input[type='text'] {
-  float: left;
-  padding: 0;
-  padding-left: 14px;
-  width: 195px;
-  line-height: 48px;
-  box-sizing: border-box;
-  border: none;
-  color: #343a40;
-}
-
-.airline-search-section-multi input[type='text'] {
+.departure, .arrival > span {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 
-input[type='text'].k1_input_text {
-  height: 48px;
-  padding: 10px 12px;
-  border: 1px solid #dee2e6;
-  box-sizing: border-box;
-  font-size: 14px;
+
+.change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+
+.change button {
+  width: 30px;
+  height: 30px;
+  background-color: #f1f3f5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  flex: 1;
   border-radius: 2px;
-  color: #343a40;
-  transition: all 0.08s ease-out;
 }
 
-.mrt_city_selector .mrt_btn_swapper {
-  float: left;
-  margin-top: 8px;
+.date-container .fa-calendar {
+  font-size: 23px;
+  padding: 7px;
+  color: #51abf3;
 }
 
-.mrt_btn_swapper {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background: url(https://flights.myrealtrip.com/air/imgs_ibe/mrt/btn/main/ico_swapper_lg.png) no-repeat center #f1f3f5;
-  background-size: 24px !important;
+.date-container > input[type='text'] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px !important;
+  font-size: 1.5rem;
+}
+
+.passenger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  flex: 1;
+  cursor: pointer;
   border-radius: 2px;
-  font-size: 0;
+}
+
+.passenger .fa-user {
+  margin: 0px 10px;
+  font-size: 23px;
+  color: #51abf3;
+}
+
+.passenger span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.passenger .fa-angle-down {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+}
+
+.search-button {
+  width: 75px;
+  background-color: #51abf3;
+  background-color: white;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.search-button  span {
+  color: #51abf3;
+  font-size: 17px;
+}
+
+
+.airline-ticket-main-container {
+  width: calc(100% - 240px);
+}
+
+.airline-ticket-main-container .result-filter-container {
+  display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1;
+}
+
+.airline-ticket-main-container .result-filter-container  select {
+  width: 170px;
+  height: 40px;
+  outline: none;
+}
+
+.result-information-container {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 2;
+}
+
+.result-information-container span:first-child {
+  font-weight: bold;
+}
+
+.result-information-container span:last-child {
+  font-size: 12px;
 }

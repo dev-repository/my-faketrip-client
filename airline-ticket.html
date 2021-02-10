@@ -1,145 +1,157 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="/assets/css/reset.css" rel="stylesheet" />
     <link href="/assets/css/common.css" rel="stylesheet" />
-    <link href="/assets/css//header.css" rel="stylesheet" />
-    <link href="/assets/css/footer.css" rel="stylesheet" />
+    <link href="/assets/css/header.css" rel="stylesheet" />
+    <link href="/assets/css/airline-ticket.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   </head>
 
   <body>
-    <div id="ki_wrap">
-      <div id="k1_header">
-        <header class="Header-module__header--1QMJB Header-module__transparent--1fKwx Header--flight">
-          <div class="Header-module__gnb--1yrf7 Header-module__transparent--1fKwx">
-            <nav class="GlobalNavBar GlobalNavBar--transparent default">
-              <div class="Logo mrt-logo-container gtm-gnb-logo">
-                <a href="https://www.myrealtrip.com/" data-turbolinks="false"
-                  ><img
-                    class="mrt-logo-img"
-                    src="data:image/png;base64,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"
-                    alt="logo"
-                /></a>
-              </div>
-              <div class="GnbHeaderSearchBar-module__container--azIKz">
-                <div class="SearchFormInput-module__container--2Zmo8">
-                  <div class="SearchBar-module__container--1PUCY SearchBar-module__transparent--2i1IJ">
-                    <img
-                      class="SearchBar-module__icon--BioYf"
-                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjEuNSI+CiAgICAgICAgPHBhdGggZD0iTTguNjY3IDE0LjU4M2E1LjkxNSA1LjkxNSAwIDAgMCA1LjkxNi01LjkxNkE1LjkxNSA1LjkxNSAwIDAgMCA4LjY2NyAyLjc1IDUuOTE1IDUuOTE1IDAgMCAwIDIuNzUgOC42NjdhNS45MTUgNS45MTUgMCAwIDAgNS45MTcgNS45MTZ6Ii8+CiAgICAgICAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNMTMuMTExIDEzLjExMWw0LjQ0NSA0LjQ0NSIvPgogICAgPC9nPgo8L3N2Zz4K"
-                      alt="검색"
-                    /><input
-                      id="SearchBar__input"
-                      class="SearchBar-module__input--1Wvjj SearchBar-module__transparent--2i1IJ"
-                      type="search"
-                      placeholder="도시나 상품을 검색해보세요"
-                      spellcheck="false"
-                      autocomplete="off"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="Popup-module__container--3IA26 Popup-module__bottomLeft--1S42K SearchFormInput-module__popup--1CQ20 SearchFormInput-module__transparent--2Wev4 SearchFormInput-module__default--1Cfdm"
-                  >
-                    <ul class="SearchFormAutoComplete-module__container--1t34j"></ul>
-                  </div>
+    <!-- header -->
+    <div class="header">
+      <header class="header-container white">
+        <div class="header-inner">
+          <nav class="header-nav">
+            <!-- logo -->
+            <div class="logo logo-container">
+              <a href="/">
+                <img
+                  class="logo-img"
+                  src="https://media.vlpt.us/images/jian/post/a5aa6b15-69a1-4ec2-ac59-db10e1c5eafc/faketrip.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <!-- logo -->
+            <!-- search -->
+            <div class="search-bar">
+              <div class="search-input">
+                <div class="search-container">
+                  <i class="fas fa-search"></i>
+                  <input type="search" placeholder="도시나 상품을 검색해보세요" spellcheck="false" autocomplete="off" />
                 </div>
               </div>
-              <div class="GlobalNavItems GlobalNavItems--transparent">
-                <div class="GlobalNavItems__item">
-                  <a
-                    class="GnbItemButton-module__item--2ELl4 GnbItemButton-module__link--1xzy3 GnbItemButton-module__transparent--2pmYk"
-                    href="https://www.myrealtrip.com/about/becomeguide"
-                    data-turbolinks="false"
-                    >파트너 등록하기</a
-                  >
-                </div>
-                <div class="GlobalNavItems__item">
-                  <a
-                    class="GnbItemButton-module__item--2ELl4 GnbItemButton-module__link--1xzy3 GnbItemButton-module__transparent--2pmYk"
-                    href="https://www.myrealtrip.com/users/sign_in"
-                    data-turbolinks="false"
-                    >로그인</a
-                  >
-                </div>
-                <div class="GlobalNavItems__item">
-                  <a
-                    class="GnbItemButton-module__item--2ELl4 GnbItemButton-module__link--1xzy3 GnbItemButton-module__transparent--2pmYk GnbItemButton-module__outline--wF4j1"
-                    href="https://www.myrealtrip.com/users/sign_up"
-                    data-turbolinks="false"
-                    >회원가입</a
-                  >
-                </div>
+            </div>
+            <!-- search -->
+            <!-- menu -->
+            <div class="header-menu white">
+              <div class="header-menu-item">
+                <a class="d-line-block" href="#" data-turbolinks="false">파트너 등록하기</a>
               </div>
-            </nav>
+              <div class="header-menu-item">
+                <a class="d-line-block" href="#" data-turbolinks="false">로그인</a>
+              </div>
+              <div class="header-menu-item">
+                <a class="d-line-block link-btn" href="#">회원가입</a>
+              </div>
+            </div>
+            <!-- menu -->
+          </nav>
+        </div>
+        <!-- header footer navigation link -->
+        <div class="header-navigation">
+          <nav class="header-navigation-container">
+            <div class="header-navigation-wrapper navigation-inner">
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/49_original_1608700445.png?1608700445"
+                    alt="ic_flight_40x40"
+                  />
+                  <span>항공권</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/50_original_1608701561.png?1608701561"
+                    alt="ic_bnb_40x40"
+                  />
+                  <span>숙소</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955"
+                    alt="ic_tour_sm"
+                  />
+                  <span>투어・티켓</span>
+                </a>
+              </div>
+              <div class="divider"></div>
+              <div class="navigation-item">
+                <a href="#">
+                  <span>랜선투어</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <span>할인혜택</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- header footer navigation link -->
+      </header>
+    </div>
+    <!-- header -->
+
+    <!-- ticket page -->
+    <div class="ticket_search_container">
+      <!-- search -->
+      <div class="airline-ticket-search-container">
+        <div class="title">
+          <span>왕복</span>
+        </div>
+        <div class="ticket-search-container">
+          <div class="travel">
+            <div class="departure" >
+						  <span>인천(ICN)</span>
+					  </div>
+            <div class="change">
+              <button type="button">
+                <i class="fas fa-exchange-alt"></i>
+              </button>
+            </div>
+            <div class="arrival">
+						  <span>제주(CJU)</span>
+					  </div>
           </div>
-          <div class="Header-module__lnb--2J09H Header-module__transparent--1fKwx">
-            <nav class="LnbLocalNavBar-module__container--tA5q-">
-              <div class="LnbLocalNavBar-module__wrapper--3fC-F LnbLocalNavBar-module__lnbMenu--C4--I">
-                <div class="LnbLocalNavItem-module__container--msPys">
-                  <a
-                    class="LnbLocalNavItem-module__item--3ZodT LnbLocalNavItem-module__transparent--13Vhz"
-                    id="home-link"
-                    href="https://www.myrealtrip.com"
-                    ><span class="LnbLocalNavItem-module__label--3BISS">홈</span></a
-                  >
-                </div>
-                <div class="LnbLocalNavItem-module__container--msPys">
-                  <a
-                    class="LnbLocalNavItem-module__item--3ZodT LnbLocalNavItem-module__transparent--13Vhz LnbLocalNavItem-module__active--3-BID"
-                    id="flights-link"
-                    href="https://flights.myrealtrip.com/"
-                    ><span class="LnbLocalNavItem-module__label--3BISS">항공권</span></a
-                  >
-                </div>
-                <div class="LnbLocalNavItem-module__container--msPys">
-                  <a
-                    class="LnbLocalNavItem-module__item--3ZodT LnbLocalNavItem-module__transparent--13Vhz"
-                    id="accommodations-link"
-                    href="https://www.myrealtrip.com/campaigns/accommodation_main"
-                    ><span class="LnbLocalNavItem-module__label--3BISS">숙소</span></a
-                  >
-                </div>
-                <div class="LnbLocalNavItem-module__container--msPys">
-                  <a
-                    class="LnbLocalNavItem-module__item--3ZodT LnbLocalNavItem-module__transparent--13Vhz"
-                    id="transportation-link"
-                    href="https://www.myrealtrip.com/campaigns/jejurent"
-                    ><span class="LnbLocalNavItem-module__label--3BISS">렌터카・교통</span></a
-                  >
-                </div>
-                <div class="LnbLocalNavItem-module__container--msPys">
-                  <a
-                    class="LnbLocalNavItem-module__item--3ZodT LnbLocalNavItem-module__transparent--13Vhz"
-                    id="tour_ticket-link"
-                    href="https://www.myrealtrip.com/experiences/"
-                    ><span class="LnbLocalNavItem-module__label--3BISS">투어・티켓</span></a
-                  >
-                </div>
-                <div class="LnbLocalNavItem-module__container--msPys">
-                  <a
-                    class="LnbLocalNavItem-module__item--3ZodT LnbLocalNavItem-module__transparent--13Vhz"
-                    id="lantour-link"
-                    href="https://www.myrealtrip.com/q/%EB%9E%9C%EC%84%A0%ED%88%AC%EC%96%B4?q=%EB%9E%9C%EC%84%A0%ED%88%AC%EC%96%B4"
-                    ><span class="LnbLocalNavItem-module__label--3BISS">랜선투어</span></a
-                  >
-                </div>
-                <div class="LnbLocalNavItem-module__container--msPys">
-                  <a
-                    class="LnbLocalNavItem-module__item--3ZodT LnbLocalNavItem-module__transparent--13Vhz"
-                    id="discount-link"
-                    href="https://www.myrealtrip.com/campaigns/mrtcoupon"
-                    ><span class="LnbLocalNavItem-module__label--3BISS">할인혜택</span></a
-                  >
-                </div>
-              </div>
-            </nav>
+          <div class="date-container">
+            <i class="far fa-calendar"></i>
+            <input type="text" name="dates" class="form-control" />
           </div>
-        </header>
+          <div class="passenger">
+					  <i class="far fa-user"></i>
+					  <span> 승객 1명, 전체</span>
+					  <i class="fas fa-angle-down"></i>
+				  </div>
+          <button class="search-button">
+            <span>검색</span>
+          </button>
+        </div>
       </div>
     </div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- search -->
+    <div class="ticket_list_container">
+			<div class="ticket_list_information">
+        <div class="airline-ticket-main-container">
+          <div class="result-filter-container">main</div>
+        </div>
+			</div>
+		</div>
+    <!-- ticket page -->
+    <script>
+      $('input[name="dates"]').daterangepicker();
+    </script>
   </body>
 </html>
