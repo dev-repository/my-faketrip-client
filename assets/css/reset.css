@@ -160,8 +160,74 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+input[type='checkbox'],
+input[type='radio'],
+button,
+select {
+  cursor: pointer;
+}
+
+input,
+select,
+textarea,
+label,
+button {
+  vertical-align: middle;
+}
+
+fieldset,
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+form,
+fieldset,
+input,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+legend,
+caption {
+  display: none;
+  clear: both;
+}
+
 /*joinform,loginform.css*/
-input:not([type='checkbox']):not([type='radio']),
+/* input:not([type='checkbox']):not([type='radio']),
 button,
 textarea,
 select {
@@ -232,53 +298,24 @@ button {
 button,
 html input {
   cursor: default;
-}
+} */
 /*joinform,loginform.css*/
 /* regions.css*/
-main {
+/* main {
   position: relative;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
-/* @media screen and (max-width: 1199px) and (min-width: 992px)
-.destination-header .header-container .content {
-    width: 944px;
-}
-@media screen and (max-width: 1199px) and (min-width: 992px)
-.header-container .content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 20;
-    color: #fff;
-    text-align: center;
-    width: 664px;
-} */
-ul,
-li {
+
+ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
 }
 
-ol ol,
-ul ul,
-ol ul,
-ul ol {
+ol ol, ul ul, ol ul, ul ol {
   margin-bottom: 0;
 }
 ul {
@@ -286,43 +323,26 @@ ul {
   margin: 0;
   padding: 0;
 }
-ul,
-li {
+ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
 }
-ol,
-ul,
-dl {
+ol, ul, dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-ul,
-li {
+ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
 }
-/* my-info */
 main {
   position: relative;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 img {
@@ -335,11 +355,7 @@ img {
 img {
   border: 0;
 }
-a,
-a:active,
-a:hover,
-a:link,
-a:visited {
+a, a:active, a:hover, a:link, a:visited {
   text-decoration: none;
 }
 img {
@@ -351,4 +367,4 @@ img {
 }
 img {
   border: 0;
-}
+} */
