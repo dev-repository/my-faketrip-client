@@ -234,3 +234,19 @@ html input {
   cursor: default;
 } */
 /*joinform,loginform.css*/
+form {
+  display: block;
+  margin-top: 0em;
+}
+.col-xs-12 {
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 0.9375rem;
+  padding-left: 0.9357rem;
+}
+.row {
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+}
