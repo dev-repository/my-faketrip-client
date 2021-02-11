@@ -161,7 +161,7 @@ p {
   margin-bottom: 1rem;
 }
 /*joinform,loginform.css*/
-input:not([type='checkbox']):not([type='radio']),
+/* input:not([type='checkbox']):not([type='radio']),
 button,
 textarea,
 select {
@@ -232,5 +232,5 @@ button {
 button,
 html input {
   cursor: default;
-}
+} */
 /*joinform,loginform.css*/
