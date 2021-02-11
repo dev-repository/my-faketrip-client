@@ -444,7 +444,7 @@ button:first-child {
 
 .airline-ticket-seat .seat-num {
   float: left;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   line-height: 40px;
   font-size: 13px;
   color: #343a40;
