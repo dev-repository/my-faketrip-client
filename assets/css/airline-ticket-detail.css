@@ -1,0 +1,351 @@
+.airline-ticket-detail-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.purchase-container {
+  display: flex;
+  width: 50%;
+  margin-top: 40px;
+}
+
+.purchase-container .purchase-information-container {
+  width: calc(100% - 296px);
+  margin-right: 30px;
+}
+
+.price-container {
+  width: 296px;
+}
+
+.airline-tickets-itinerary-container {
+  margin-bottom: 30px;
+}
+
+.itinerary-container {
+  border-top: 2px solid #51abf3;
+}
+
+.itinerary-summary-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.departure-arrival-container {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  flex: 1;
+}
+
+.information {
+  display: flex;
+  width: 70%;
+  height: 100%;
+}
+
+.information .departure,
+.arrival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.information .departure span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.information .departure span:last-child {
+  font-size: 12px;
+}
+
+.information .arrival span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.information .arrival span:last-child {
+  font-size: 12px;
+}
+
+.information .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 2.1;
+}
+
+.information .date i {
+  height: 18px;
+}
+
+.information .date span {
+  font-size: 12px;
+}
+
+.additional-information-container {
+  display: flex;
+  height: 50%;
+  flex: 1;
+}
+
+.additional-information-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #dbdbdb;
+}
+
+.additional-information-container > div span {
+  font-size: 12px;
+}
+
+.additional-information-container > div span img {
+  width: 25px;
+  height: 25px;
+}
+
+.additional-information-container .airline {
+  flex: 2;
+}
+
+.additional-information-container .flight-type {
+  flex: 1.5;
+}
+
+.additional-information-container .seat {
+  flex: 2;
+}
+
+.additional-information-container .passenger {
+  flex: 1;
+}
+
+.mrt_reserve_right {
+  float: right;
+  width: 296px;
+}
+
+.mrt_reserve_right div:nth-child(2) {
+  line-height: 22px;
+  font-size: 14px;
+  color: #343a40;
+  letter-spacing: -0.2px;
+}
+
+.mrt_reserve_right .mrt_select_way {
+  overflow: hidden;
+  margin: 0 0 6px 0;
+}
+
+.mrt_select_way .f_blue {
+  float: left;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.f_blue {
+  color: #2b96ed !important;
+}
+
+.mrt_select_way .ico_itinerary_02 {
+  float: left;
+  margin: 0 8px;
+  margin-top: 4px;
+}
+
+.ico_itinerary_02 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(https://flights.myrealtrip.com/air/imgs_ibe/mrt/ico/main/ico_fromto_02.png) no-repeat right center;
+  font-size: 0px;
+  text-indent: -9999px;
+  background-size: 24px;
+}
+
+.mrt_reserve_right .mrt_condi_box {
+  padding-top: 12px;
+  margin-top: 16px;
+  border-top: 1px solid #dee2e6;
+}
+
+.mrt_reserve_right .mrt_condi_box .mrt_list_wrap {
+  padding-top: 0;
+  padding-bottom: 16px;
+  border-top: none;
+}
+
+.mrt_condi_box .mrt_list_wrap {
+  padding: 8px 0;
+}
+
+.mrt_reserve_right .mrt_condi_box .k1_h_tit2 {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  height: 18px;
+  margin-bottom: 10px;
+  line-height: 18px;
+  overflow: hidden;
+  transition: background-color ease-in-out 0.1s;
+}
+
+.k1_h_tit2 {
+  background: none;
+  padding: 0;
+  font-size: 14px;
+  color: #343a40;
+  font-weight: 600;
+}
+
+.mrt_reserve_right .mrt_condi_box .k1_h_tit2 a {
+  font-size: 16px;
+}
+
+.mrt_condi_box .k1_h_tit2 a {
+  display: block;
+  color: #343a40;
+}
+
+.mrt_reserve_right .mrt_condi_box .k1_h_tit2 strong {
+  margin: 0 0 0 5px;
+}
+
+.mrt_reserve_right .mrt_condi_box .mrt_list_wrap .mrt_list {
+  margin-top: 0 !important;
+}
+
+.mrt_basic_view {
+  border-top: 1px solid #e9ecef;
+}
+
+.mrt_basic_view table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.mrt_basic_view table tbody {
+  border-bottom: 1px solid #e9ecef;
+}
+
+#k1_content table th,
+#k1_content table td {
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.mrt_reserve_right .mrt_condi_box .mrt_basic_view table tbody tr td {
+  padding: 0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.75 !important;
+}
+
+.mrt_reserve_right .mrt_condi_box .mrt_basic_view table tfoot tr td {
+  padding: 10px 0 0;
+  font-weight: 600;
+  line-height: 18px !important;
+}
+
+.mrt_reserve_right .mrt_condi_box .mrt_basic_view table tbody tr:first-child td {
+  padding-top: 10px;
+}
+
+.mrt_reserve_right .mrt_condi_box .mrt_basic_view table tbody tr:last-child td {
+  padding-bottom: 10px;
+}
+
+.k1_tar {
+  text-align: right !important;
+}
+
+.mrt_total_price {
+  padding-top: 14px;
+  margin-top: 4px;
+  border-top: 1px solid #dee2e6;
+}
+
+.k1_fl {
+  float: left;
+}
+
+.mrt_total_price .k1_fr {
+  text-align: right;
+}
+
+.k1_clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.fare_total {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 2px;
+}
+
+.mrt_reserve_right .mrt_condi_box .k1_h_tit_sub {
+  display: block;
+  margin-top: 1px;
+  line-height: 16px;
+}
+
+.k1_h_tit_sub {
+  font-size: 12px;
+  color: #848c94;
+}
+
+.mrt_total_price .k1_h_tit2 {
+  padding: 0;
+  margin: 2px 0 0;
+  line-height: 24px;
+  height: 24px;
+  font-size: 16px;
+}
+
+.mrt_modal_footer {
+  padding: 40px 0 64px;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+}
+
+.mrt_btn_m {
+  height: 48px;
+  line-height: 48px;
+  min-width: 120px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.08s ease-out;
+  border: none;
+}
+
+.mrt_btn_blue {
+  background-color: #51abf3;
+  color: #fff !important;
+}
+
+.k1_w200 {
+  width: 200px;
+}
