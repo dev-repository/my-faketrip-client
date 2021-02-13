@@ -160,72 +160,6 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
-input[type='checkbox'],
-input[type='radio'],
-button,
-select {
-  cursor: pointer;
-}
-
-input,
-select,
-textarea,
-label,
-button {
-  vertical-align: middle;
-}
-
-fieldset,
-img {
-  border: 0 none;
-  vertical-align: middle;
-}
-
-body,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-p,
-form,
-fieldset,
-input,
-table,
-tr,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-
-legend {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-  font-size: 0;
-  line-height: 0;
-}
-
-legend,
-caption {
-  display: none;
-  clear: both;
-}
-
 /*joinform,loginform.css*/
 /* input:not([type='checkbox']):not([type='radio']),
 button,
@@ -300,71 +234,19 @@ html input {
   cursor: default;
 } */
 /*joinform,loginform.css*/
-/* regions.css*/
-/* main {
-  position: relative;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+form {
   display: block;
+  margin-top: 0em;
 }
-
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0;
-}
-
-ol ol, ul ul, ol ul, ul ol {
-  margin-bottom: 0;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0;
-}
-ol, ul, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0;
-}
-main {
+.col-xs-12 {
+  width: 100%;
+  float: left;
   position: relative;
+  min-height: 1px;
+  padding-right: 0.9375rem;
+  padding-left: 0.9357rem;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
+.row {
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
 }
-img {
-  border-width: 0;
-  vertical-align: middle;
-}
-img {
-  vertical-align: middle;
-}
-img {
-  border: 0;
-}
-a, a:active, a:hover, a:link, a:visited {
-  text-decoration: none;
-}
-img {
-  border-width: 0;
-  vertical-align: middle;
-}
-img {
-  vertical-align: middle;
-}
-img {
-  border: 0;
-} */

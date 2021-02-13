@@ -72,11 +72,12 @@
   padding: 0;
   position: relative;
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
   font-weight: 700;
   text-align: center;
   cursor: pointer;
-  transition: box-shadow 0.1s ease-out, background-color 0.1s ease-out, color 0.1s ease-out, border-bottom 0.1s ease-out;
+  transition: box-shadow 0.1s ease-out, background-color 0.1s ease-out, color 0.1s ease-out,
+    border-bottom 0.1s ease-out;
 }
 .Button-module__primary--3KITS:active {
   border: 1px solid #2b96ed;
