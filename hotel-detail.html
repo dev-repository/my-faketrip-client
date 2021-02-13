@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="/assets/css/reset.css" rel="stylesheet" />
+    <link href="/assets/css/common.css" rel="stylesheet" />
+    <link href="/assets/css/header.css" rel="stylesheet" />
+    <link href="/assets/css/hotel-detail.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2//hotel-detail.css/all.min.css"
+    />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="header">
+      <header class="header-container white">
+        <div class="header-inner">
+          <nav class="header-nav">
+            <!-- logo -->
+            <div class="logo logo-container">
+              <a href="/">
+                <img
+                  class="logo-img"
+                  src="https://media.vlpt.us/images/jian/post/a5aa6b15-69a1-4ec2-ac59-db10e1c5eafc/faketrip.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <!-- logo -->
+            <!-- search -->
+            <div class="search-bar">
+              <div class="search-input">
+                <div class="search-container">
+                  <i class="fas fa-search"></i>
+                  <input type="search" placeholder="도시나 상품을 검색해보세요" spellcheck="false" autocomplete="off" />
+                </div>
+              </div>
+            </div>
+            <!-- search -->
+            <!-- menu -->
+            <div class="header-menu white">
+              <div class="header-menu-item">
+                <a class="d-line-block" href="#" data-turbolinks="false">파트너 등록하기</a>
+              </div>
+              <div class="header-menu-item">
+                <a class="d-line-block" href="#" data-turbolinks="false">로그인</a>
+              </div>
+              <div class="header-menu-item">
+                <a class="d-line-block link-btn" href="#">회원가입</a>
+              </div>
+            </div>
+            <!-- menu -->
+          </nav>
+        </div>
+        <!-- header footer navigation link -->
+        <div class="header-navigation">
+          <nav class="header-navigation-container">
+            <div class="header-navigation-wrapper navigation-inner">
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/49_original_1608700445.png?1608700445"
+                    alt="ic_flight_40x40"
+                  />
+                  <span>항공권</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/50_original_1608701561.png?1608701561"
+                    alt="ic_bnb_40x40"
+                  />
+                  <span>숙소</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <img
+                    src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955"
+                    alt="ic_tour_sm"
+                  />
+                  <span>투어・티켓</span>
+                </a>
+              </div>
+              <div class="divider"></div>
+              <div class="navigation-item">
+                <a href="#">
+                  <span>랜선투어</span>
+                </a>
+              </div>
+              <div class="navigation-item">
+                <a href="#">
+                  <span>할인혜택</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- header footer navigation link -->
+      </header>
+    </div>
+    <!-- header -->
+    <!-- content -->
+    <div class="hotel-detail-container">
+      <div class="Grid-module__row--338xw">
+        <div class="HotelDetailDesktop-module__container--1pfpU">
+          <article class="HotelDetailDesktop-module__article--s1m9w">
+            <div id="HotelDetailDesktop__top">
+              <!-- header -->
+              <header class="HotelDetailDesktop-module__header--1STlS">
+                <div class="HotelDetailDesktop-module__header-left--3oLh5">
+                  <h1 class="HotelDetailDesktop-module__title--1xvfm layout-module__margin-zero--2l6PI">
+                    롯데시티호텔 제주
+                  </h1>
+                  <p class="HotelDetailDesktop-module__description--2jJWp layout-module__margin-zero--2l6PI">
+                    Lotte City Hotel Jeju
+                  </p>
+                  <address class="HotelDetailDesktop-module__address--3elv- layout-module__margin-zero--2l6PI">
+                    <img
+                      class="HotelDetailDesktop-module__location-icon--2j8aF"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEwIDEwIj4KICAgIDxwYXRoIGZpbGw9IiM4NDhDOTQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMuNTcxIDRhMS40MyAxLjQzIDAgMSAxIDIuODU5LjAwMUExLjQzIDEuNDMgMCAwIDEgMy41NyA0ek0xIDRjMCAzIDQgNiA0IDZzNC0zIDQtNmMwLTIuMjExLTEuNzg5LTQtNC00LTIuMjExIDAtNCAxLjc4OS00IDR6Ii8+Cjwvc3ZnPgo="
+                      alt="롯데시티호텔 제주"
+                    />도령로 83
+                  </address>
+                </div>
+                <div class="HotelDetailDesktop-module__header-right--3X2iJ">
+                  <div
+                    class="HotelRating-module__container--1rTpo HotelRating-module__right--1M1Ta HotelRating-module__large--1-UN-"
+                  >
+                    <div class="HotelRating-module__score--1HU5Q">8.6</div>
+                    <div class="HotelRating-module__labels--WimcM">
+                      <h3 class="HotelRating-module__score-label--3Lamy layout-module__margin-zero--2l6PI">우수함</h3>
+                      <p class="HotelRating-module__review-label--1SfHa layout-module__margin-zero--2l6PI">
+                        2,250개의 이용 후기
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <!-- header -->
+              <!-- ImageView -->
+              <div class="HotelImageViewer-module__photo--3rPvc">
+                <div class="HotelImageViewer-module__wrapper--DEXpS">
+                  <h4 class="HotelImageViewer-module__title--102nw"></h4>
+                  <div class="HotelImageViewer-module__wrapper--DEXpS">
+                    <div class="HotelImageViewer-module__view--yF6Pw" role="button" tabindex="-1">
+                      <ul>
+                        <li>
+                          <div
+                            class="HotelImageViewer-module__big--1PA2Y"
+                            role="button"
+                            tabindex="-1"
+                            style="
+                              background-image: url('https://images.trvl-media.com/hotels/8000000/7510000/7510000/7509936/3db925eb.jpg');
+                            "
+                          >
+                            <div class="ImageLoader-module__container--3MGZc HotelImageViewer-module__big--1PA2Y">
+                              <div
+                                class="ImageLoader-module__absolute--mt9fx ImageLoader-module__loadedImage--3vGKK ImageLoader-module__container--3MGZc HotelImageViewer-module__big--1PA2Y ImageLoader-module__fadeInImage--3GicH"
+                                title=""
+                                style="
+                                  background-image: url('https://images.trvl-media.com/hotels/8000000/7510000/7510000/7509936/3db925eb.jpg');
+                                "
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div
+                            class="HotelImageViewer-module__small--36Ycr"
+                            role="button"
+                            tabindex="-1"
+                            style="
+                              background-image: url('https://images.trvl-media.com/hotels/8000000/7510000/7510000/7509936/80a34706.jpg');
+                            "
+                          >
+                            <div class="ImageLoader-module__container--3MGZc HotelImageViewer-module__small--36Ycr">
+                              <div
+                                class="ImageLoader-module__absolute--mt9fx ImageLoader-module__loadedImage--3vGKK ImageLoader-module__container--3MGZc HotelImageViewer-module__small--36Ycr ImageLoader-module__fadeInImage--3GicH"
+                                title=""
+                                style="
+                                  background-image: url('https://images.trvl-media.com/hotels/8000000/7510000/7510000/7509936/80a34706.jpg');
+                                "
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div
+                            class="HotelImageViewer-module__small--36Ycr"
+                            role="button"
+                            tabindex="-1"
+                            style="
+                              background-image: url('https://images.trvl-media.com/hotels/8000000/7510000/7510000/7509936/466161b4.jpg');
+                            "
+                          >
+                            <div class="ImageLoader-module__container--3MGZc HotelImageViewer-module__small--36Ycr">
+                              <div
+                                class="ImageLoader-module__absolute--mt9fx ImageLoader-module__loadedImage--3vGKK ImageLoader-module__container--3MGZc HotelImageViewer-module__small--36Ycr ImageLoader-module__fadeInImage--3GicH"
+                                title=""
+                                style="
+                                  background-image: url('https://images.trvl-media.com/hotels/8000000/7510000/7510000/7509936/466161b4.jpg');
+                                "
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div
+                            class="HotelImageViewer-module__last--2Ifdn"
+                            role="button"
+                            tabindex="-1"
+                            style="
+                              background-image: url('https://images.trvl-media.com/hotels/8000000/7510000/7510000/7509936/d038c09d.jpg');
+                            "
+                          >
+                            <div class="ImageLoader-module__container--3MGZc HotelImageViewer-module__last--2Ifdn">
+                              <div
+                                class="ImageLoader-module__absolute--mt9fx ImageLoader-module__loadedImage--3vGKK ImageLoader-module__container--3MGZc HotelImageViewer-module__last--2Ifdn ImageLoader-module__fadeInImage--3GicH"
+                                title=""
+                                style="
+                                  background-image: url('https://images.trvl-media.com/hotels/8000000/7510000/7510000/7509936/d038c09d.jpg');
+                                "
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ImageView -->
+            </div>
+            <!-- info -->
+            <section
+              id="HotelDetailDesktop__information"
+              class="HotelDetailDesktop-module__section--272UX layout-module__unset-min-height--3vOhG"
+            >
+              <h2 class="HotelDetailDesktop-module__hotel-info-title--3IUU8">숙소 정보</h2>
+              <section class="HotelAddress-module__container--Ejkhh layout-module__unset-min-height--3vOhG">
+                <div class="HotelAddress-module__display--Cnw2i">
+                  <div class="HotelAddress-module__location--yseEd">
+                    <img
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiM1MUFCRjMiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEwIDE4Yy00LTQuNDA5LTYtNy43MjYtNi05Ljk1M0M0IDQuNzA3IDYuNjg2IDIgMTAgMnM2IDIuNzA3IDYgNi4wNDdjMCAyLjIyNy0yIDUuNTQ0LTYgOS45NTN6bTAtNy43NWEyLjI1IDIuMjUgMCAxIDAgMC00LjUgMi4yNSAyLjI1IDAgMCAwIDAgNC41eiIvPgo8L3N2Zz4K"
+                      alt="숙소 주소"
+                    />
+                  </div>
+                  <div class="HotelAddress-module__address--2KJzo">
+                    <p class="HotelAddress-module__address-text--28JRo" style="-webkit-box-orient: vertical">
+                      도령로 83
+                    </p>
+                  </div>
+                  <div class="HotelAddress-module__buttons--FrlS1">
+                    <button
+                      class="HotelAddress-module__button--3EZ7S layout-module__padding-zero--1mjBH layout-module__border-zero--TWqBT layout-module__padding-zero--1mjBH layout-module__border-zero--TWqBT HotelAddress__clipboard-target"
+                      type="button"
+                      data-clipboard-text="도령로 83"
+                    >
+                      <img
+                        class="HotelAddress-module__icon--2cXwy"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1vcGFjaXR5PSIwIiBkPSJNMCAwaDIwdjIwSDB6Ii8+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjExIiBoZWlnaHQ9IjEzIiB4PSI2LjI1IiB5PSI0Ljc1IiBzdHJva2U9IiM0OTUwNTYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHJ4PSIuMSIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzQ5NTA1NiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xNC4yNSAxLjc1SDMuNzVhLjUuNSAwIDAgMC0uNS41djEzLjUiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                        alt=""
+                      />주소 복사</button
+                    ><a
+                      class="HotelAddress-module__link--1jt0h"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=Lotte%20City%20Hotel%20Jeju%20%EC%A0%9C%EC%A3%BC"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      role="button"
+                      tabindex="0"
+                      ><div>
+                        <img
+                          class="HotelAddress-module__icon--2cXwy"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1vcGFjaXR5PSIwIiBkPSJNMCAwaDIwdjIwSDB6Ii8+CiAgICAgICAgPGcgc3Ryb2tlPSIjNDk1MDU2IiBzdHJva2Utd2lkdGg9IjEuNSI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zLjI1NyA0LjQ5OEw3Ljc1IDNsNC41IDEuNzVMMTYuNzQ5IDNhLjAwMS4wMDEgMCAwIDEgLjAwMS4wMDF2MTIuNDkyYS4wMS4wMSAwIDAgMS0uMDA3LjAxTDEyLjI1IDE3bC00LjUtMS41TDMuMjUxIDE3YS4wMDEuMDAxIDAgMCAxLS4wMDEtLjAwMVY0LjUwN2EuMDEuMDEgMCAwIDEgLjAwNy0uMDF6TTcuNzUgM3YxMi41TTEyLjI1IDQuNVYxNyIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                          alt=""
+                        />지도 보기
+                      </div></a
+                    >
+                  </div>
+                  <div class="HotelAddress-module__overlay--ZhxNW"></div>
+                </div>
+              </section>
+              <div>
+                <div class="HotelLandmarks-module__container--3jVMa">
+                  <h3 class="HotelLandmarks-module__title--1dXEA layout-module__margin-zero--2l6PI">주변 인기 명소</h3>
+                  <div class="HotelLandmarks-module__wrapper--12KBO">
+                    <ul class="HotelLandmarks-module__list--3QBgx">
+                      <li class="HotelLandmarks-module__item--3WO5i">
+                        <p>러브랜드</p>
+                        <p class="HotelLandmarks-module__distance--2zysw">4.4km</p>
+                      </li>
+                      <li class="HotelLandmarks-module__item--3WO5i">
+                        <p>돌문화 공원</p>
+                        <p class="HotelLandmarks-module__distance--2zysw">19.7km</p>
+                      </li>
+                      <li class="HotelLandmarks-module__item--3WO5i">
+                        <p>용눈이오름</p>
+                        <p class="HotelLandmarks-module__distance--2zysw">25.4km</p>
+                      </li>
+                      <li class="HotelLandmarks-module__item--3WO5i">
+                        <p>카멜리아 힐</p>
+                        <p class="HotelLandmarks-module__distance--2zysw">25.9km</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="HotelDetailDesktop-module__check-in--2flit">
+                <div style="display: flex">
+                  <h3 class="HotelDetailDesktop-module__check-in-out-title--2RcEU">체크인/체크아웃</h3>
+                  <p class="HotelDetailDesktop-module__check-in-out-info--1Av0o">2:00 PM - 12:00 PM</p>
+                </div>
+              </div>
+              <div>
+                <div class="HotelIntroduction-module__container--2lxtB">
+                  <h3 class="HotelIntroduction-module__title--2nxC4 layout-module__margin-zero--2l6PI">소개</h3>
+                  <div>
+                    <p class="HotelIntroduction-module__text--3IySL">
+                      이 금연 호텔에는 레스토랑, 야외 수영장, 피트니스 시설 등이 마련되어 있습니다. 공용 장소에서의 무료
+                      WiFi, 무료 셀프 주차 및 무료 공항 드롭오프도 제공됩니다. 이 밖의 편의 시설/서비스로는 바/라운지,
+                      사우나, 비즈니스 센터 등이 있습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- info -->
+          </article>
+          <aside class="HotelDetailDesktop-module__aside--_WleW" data-sticky-container="true">
+            <div class="HotelDetailDesktop-module__sidebar--SDCZm" data-margin-top="80" style="">
+              <div class="HotelSideBar-module__container--2eR4G">
+                <div class="HotelSideBar-module__side-bar--3aKw4">
+                  <div class="HotelSideBar-module__wrapper--1lFID">
+                    <p class="HotelSideBar-module__total-price--ddaX_">104,544<small>원~</small></p>
+                  </div>
+                  <p class="HotelSideBar-module__price-info--32Veq">세금 포함 • 1박 평균104,544원</p>
+                  <a
+                    href="https://www.myrealtrip.com/accommodations/hotels/454201/forward?agency=BOOKING_DOT_COM&amp;link=https%3A%2F%2Fsp.booking.com%2Fhotel%2Fkr%2Flotte-city-jeju.ko.html%3Faid%3D1811099%26checkin%3D2021-03-24%26checkout%3D2021-03-25%26room1%3DA%252CA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button
+                      type="button"
+                      class="Button-module__button--1H779 Button-module__primary--3KITS Button-module__large--xFJf5"
+                      style="width: 272px; margin-top: 1.5rem"
+                    >
+                      최저가 객실 예약
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
