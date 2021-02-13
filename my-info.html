@@ -3,14 +3,18 @@
 
 <head>
     <link href="/assets/css/reset.css" rel="stylesheet" />
+    <link href="/assets/css/navbar.css" rel="stylesheet" />
+    <link href="/assets/css/common.css" rel="stylesheet" />
     <link href="/assets/css/my-info.css" rel="stylesheet" />
+    <link href="/assets/css/footer.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <!--main-->
     <main class="traveler">
         <div class="traveler-container clearfix">
             <div class="sidebar-heading">프로필 관리</div>
@@ -64,9 +68,7 @@
                                     <div class="input-wrapper text-middle">
                                         <div class="row">
                                             <div class="col-xs-12">
-                                                <input type="text" class="form-control text-content" value="유저 닉네임" name="" readonly data-fv-field="user[name]">
-                                                <small class="help-block" data-fv-validator="notEmpty" data-fv-for="user[username]" data-fv-result="NOT_VALIDATED"style="display:none">멋진 이름이 있으시잖아요.</small>
-                                                <small class="help-block" data-fv-validator="notEmpty" data-fv-for="user[username]" data-fv-result="NOT_VALIDATED"style="display:none">이름은 두 글자 이상 입령해주세요.</small>
+                                                <input type="text" class="form-control text-content" value="유저 닉네임" readonly name="account-input" id="nickname">
                                             </div>
                                         </div>
                                     </div>
@@ -76,14 +78,12 @@
                                     <div class="input-wrapper text-middle">
                                         <div class="row">
                                             <div class="col-xs-12">
-                                                <input type="text" class="form-control text-content" value="***********" name="" readonly data-fv-field="user[name]">
-                                                <small class="help-block" data-fv-validator="notEmpty" data-fv-for="user[username]" data-fv-result="NOT_VALIDATED"style="display:none">멋진 이름이 있으시잖아요.</small>
-                                                <small class="help-block" data-fv-validator="notEmpty" data-fv-for="user[username]" data-fv-result="NOT_VALIDATED"style="display:none">이름은 두 글자 이상 입령해주세요.</small>
+                                                <input type="text" class="form-control text-content" value="***********" readonly name="account-input" id="password">
                                             </div>
                                         </div>
                                     </div>
                                     </div>
-                                    <div class="form-btn-wrap">
+                                    <div class="form-btn-wrap d-none" id="button-group">
                                         <div class="form-btn-container clearfix">
                                             <div class="btn--width-50">
                                                 <button class="btn-new btn--type-gray btn--width-100 btn--size-sm" onclick="javascript:location.reload();return false;" style="border:0px">취소하기</button>
@@ -98,14 +98,62 @@
                         </div>
                     </div>
                 </main>
-                <div class="account-remove">
+                <div class="account-remove" id="remove">
                     <div class="text-clickable-container" data-popup-window>
-                        <div class="text text-sm">계정 삭제하기</div>
+                        <div class="text text-sm">계정 탈퇴하기</div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <div id="myModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" style="font-size: 20px;">회원 탈퇴진행</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p style="font-size: 15px;">회원탈퇴 진행하시겠습니까 ?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" style="font-size: 12px;">삭제하기</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal"style="font-size: 12px;">취소</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<script>
+
+    var isModify = false;
+    var $accountModify = $('#account-modify');
+    var $accountInput = $('[name=account-input]');
+    var $buttonGroup = $('#button-group');
+    var $remove = $('#remove');
+
+    $accountModify.off().on('click', function (event) {
+        if (isModify) {
+            // 수정취소.
+            isModify = false;
+            $accountInput.attr('readonly', 'readonly');
+            $buttonGroup.addClass('d-none')
+        } else {
+            //인풋 수정
+            isModify = true;
+            $accountInput.removeAttr('readonly');
+            $buttonGroup.removeClass('d-none');
+        }
+        console.log(isModify)
+    })
+
+    $remove.off().on('click', function (event) {
+        $('#myModal').modal('show')
+    })
+ 
+</script>
 </body>
 
 </html>
