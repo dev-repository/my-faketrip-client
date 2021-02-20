@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <link href="/assets/css/wirte.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/css/froala_editor.pkgd.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/js/froala_editor.pkgd.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container w-100">
+      <div class="px-4 w-100 pt-5">
+        <div class="d-flex flex-row justify-content-between">
+          <div class="d-flex flex-row">
+            <label class="label-cover-photo button-transparent" id="btn-cover-image">
+              <i class="far fa-image"></i>
+              <span>Add Cover Photo</span>
+            </label>
+          </div>
+          <div>
+            <button class="btn btn-dark" type="button">등록하기</button>
+            <button class="btn btn-dark" type="button">수정하기</button>
+            <button class="btn btn-light" type="button">삭제하기</button>
+          </div>
+        </div>
+        <div id="prevew-area"></div>
+        <div id="category-area"></div>
+        <div id="contury-area" class="d-flex"></div>
+        <div class="mt-5">
+          <textarea
+            maxlength="150"
+            placeholder="Title…"
+            id="textarea-title"
+            class="textarea-title"
+            spellcheck="false"
+          ></textarea>
+        </div>
+        <div id="example"></div>
+      </div>
+    </div>
+    <script>
+      var optionButton = function (id, placeholder, name, width) {
+        return (
+          '<div class="option-input-wrapper" style="' +
+          width +
+          '">' +
+          '<input type="text" name="' +
+          name +
+          '" id="' +
+          id +
+          '" class="option-input" placeholder="' +
+          placeholder +
+          '" />' +
+          '<i name="remove-text-input" class="fas fa-trash-alt d-none"></i>' +
+          '</div>'
+        );
+      };
+
+      var previewImage = function (file) {
+        var blobURL = window.URL.createObjectURL(file);
+
+        return (
+          '<div class="mb-5">' +
+          '  <div class="post-cover"' +
+          '   style="background-image: url(' +
+          blobURL +
+          ');">' +
+          '    <div class="post-cover-inner">' +
+          '      <button type="button" id="btn-remove-preview"><i class="fas fa-times"></i></button>' +
+          '    </div>' +
+          '  </div>' +
+          '</div>'
+        );
+      };
+
+      var editor = new FroalaEditor('#example', {
+        iconsTemplate: 'font_awesome_5',
+      });
+
+      var $previewArea = $('#prevew-area');
+      var $categoryArea = $('#category-area');
+      var $conturyArea = $('#contury-area');
+
+      var $coverImage = $('#btn-cover-image');
+
+      var countrys = [
+        {
+          id: 'continent-id',
+          placeholder: '대륙',
+          groupName: 'country-input',
+        },
+        {
+          id: 'large_country-id',
+          placeholder: '국가',
+          groupName: 'country-input',
+        },
+        {
+          id: 'small_country-id',
+          placeholder: '도시',
+          groupName: 'country-input',
+        },
+      ];
+
+      $coverImage.off().on('click', function (event) {
+        var input = document.createElement('input');
+        input.type = 'file';
+        input.onchange = function () {
+          $coverImage.addClass('d-none');
+          $previewArea.addClass('mb-5').addClass('mt-5');
+          $previewArea.html(previewImage(input.files[0]));
+          $('#btn-remove-preview')
+            .off()
+            .on('click', function () {
+              $coverImage.removeClass('d-none');
+              $previewArea.removeClass('mb-5').removeClass('mt-5');
+              $previewArea.empty();
+            });
+        };
+        input.click();
+      });
+
+      for (var i = 0; i < countrys.length; i++) {
+        var html = optionButton(countrys[i].id, countrys[i].placeholder, countrys[i].groupName, '');
+        $conturyArea.append(html);
+      }
+
+      $categoryArea.append(optionButton('category-id', '카테고리', 'category-input', 'width: 285px;'));
+
+      applyInputEvent();
+
+      function onKeyup(event) {
+        console.log(event);
+        if (event.currentTarget.value && event.currentTarget.value.length) {
+          event.currentTarget.nextElementSibling.classList.remove('d-none');
+          return;
+        }
+        event.currentTarget.nextElementSibling.classList.add('d-none');
+      }
+
+      function onClick(event) {
+        event.currentTarget.previousElementSibling.value = '';
+        event.currentTarget.classList.add('d-none');
+      }
+
+      function applyInputEvent() {
+        var $removeTextInput = $('[name=remove-text-input]');
+
+        var $country = $('[name=country-input]');
+        var $category = $('[name=category-input]');
+
+        $removeTextInput.off().on('click', onClick);
+        $category.off().on('keyup', onKeyup);
+        $country.off().on('keyup', onKeyup);
+      }
+    </script>
+  </body>
+</html>
