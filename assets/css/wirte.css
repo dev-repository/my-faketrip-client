@@ -1,3 +1,28 @@
+.write-page-header {
+  position: fixed;
+  top: 0px;
+  background: white;
+  width: 100%;
+  z-index: 50;
+  box-shadow: rgb(0 0 0 / 8%) 0px 0px 8px;
+}
+
+.write-page-header .header-container {
+  height: 4rem;
+}
+
+.write-page-header .header-container .header {
+  width: 1376px;
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .label-cover-photo {
   opacity: 0.5;
   margin: 0;

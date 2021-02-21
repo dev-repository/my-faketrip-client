@@ -18,8 +18,15 @@
     ></script>
   </head>
   <body>
+    <div class="write-page-header">
+      <div class="header-container">
+        <div class="header">
+          <i id="btn-back" class="fas fa-arrow-left" style="cursor: pointer"></i>
+        </div>
+      </div>
+    </div>
     <div class="container w-100">
-      <div class="px-4 w-100 pt-5">
+      <div class="px-4 w-100" style="padding-top: 6rem">
         <div class="d-flex flex-row justify-content-between">
           <div class="d-flex flex-row">
             <label class="label-cover-photo button-transparent" id="btn-cover-image">
@@ -28,14 +35,12 @@
             </label>
           </div>
           <div>
-            <button class="btn btn-dark" type="button">등록하기</button>
+            <button class="btn btn-dark" id="register-btn" type="button">등록하기</button>
             <button class="btn btn-dark" type="button">수정하기</button>
             <button class="btn btn-light" type="button">삭제하기</button>
           </div>
         </div>
         <div id="prevew-area"></div>
-        <div id="category-area"></div>
-        <div id="contury-area" class="d-flex"></div>
         <div class="mt-5">
           <textarea
             maxlength="150"
@@ -45,27 +50,73 @@
             spellcheck="false"
           ></textarea>
         </div>
-        <div id="example"></div>
+        <div id="editor"></div>
+        <h3 class="mt-5">카테고리</h3>
+        <div id="category-area">
+          <div class="option-input-wrapper">
+            <input
+              type="text"
+              name="category-input"
+              id="category-id"
+              class="option-input"
+              placeholder="카테고리"
+            />
+            <i name="remove-text-input" class="fas fa-trash-alt d-none"></i>
+          </div>
+        </div>
+        <h3 class="mt-5">가격</h3>
+        <div>
+          <div class="option-input-wrapper">
+            <input
+              type="number"
+              min="1"
+              step="any"
+              name="price-input"
+              id="price-id"
+              class="option-input"
+              placeholder="가격"
+            />
+            원
+          </div>
+        </div>
+        <h3 class="mt-5">지역</h3>
+        <div id="contury-area" class="d-flex">
+          <div class="option-input-wrapper">
+            <input
+              type="text"
+              name="country-input"
+              id="continent-id"
+              class="option-input"
+              placeholder="대륙"
+            />
+            <i name="remove-text-input" class="fas fa-trash-alt d-none"></i>
+          </div>
+
+          <div class="option-input-wrapper">
+            <input
+              type="text"
+              name="country-input"
+              id="large_country-id"
+              class="option-input"
+              placeholder="국가"
+            />
+            <i name="remove-text-input" class="fas fa-trash-alt d-none"></i>
+          </div>
+
+          <div class="option-input-wrapper">
+            <input
+              type="text"
+              name="country-input"
+              id="small_country-id"
+              class="option-input"
+              placeholder="도시"
+            />
+            <i name="remove-text-input" class="fas fa-trash-alt d-none"></i>
+          </div>
+        </div>
       </div>
     </div>
     <script>
-      var optionButton = function (id, placeholder, name, width) {
-        return (
-          '<div class="option-input-wrapper" style="' +
-          width +
-          '">' +
-          '<input type="text" name="' +
-          name +
-          '" id="' +
-          id +
-          '" class="option-input" placeholder="' +
-          placeholder +
-          '" />' +
-          '<i name="remove-text-input" class="fas fa-trash-alt d-none"></i>' +
-          '</div>'
-        );
-      };
-
       var previewImage = function (file) {
         var blobURL = window.URL.createObjectURL(file);
 
@@ -83,33 +134,47 @@
         );
       };
 
-      var editor = new FroalaEditor('#example', {
+      var editor = new FroalaEditor('#editor', {
+        placeholderText: '내용을 작성해주세요.',
         iconsTemplate: 'font_awesome_5',
+        toolbarButtons: {
+          moreText: {
+            buttons: [
+              'bold',
+              'italic',
+              'underline',
+              'fontFamily',
+              'fontSize',
+              'textColor',
+              'backgroundColor',
+              'inlineClass',
+              'inlineStyle',
+            ],
+            buttonsVisible: 3,
+          },
+          moreParagraph: {
+            buttons: ['alignLeft', 'alignCenter', 'alignRight'],
+            buttonsVisible: 3,
+          },
+          moreRich: {
+            buttons: ['insertLink', 'insertTable'],
+            buttonsVisible: 3,
+          },
+          moreMisc: {
+            buttons: ['undo', 'redo', 'html'],
+            align: 'right',
+            buttonsVisible: 3,
+          },
+        },
       });
 
       var $previewArea = $('#prevew-area');
-      var $categoryArea = $('#category-area');
-      var $conturyArea = $('#contury-area');
-
       var $coverImage = $('#btn-cover-image');
-
-      var countrys = [
-        {
-          id: 'continent-id',
-          placeholder: '대륙',
-          groupName: 'country-input',
-        },
-        {
-          id: 'large_country-id',
-          placeholder: '국가',
-          groupName: 'country-input',
-        },
-        {
-          id: 'small_country-id',
-          placeholder: '도시',
-          groupName: 'country-input',
-        },
-      ];
+      var $removeTextInput = $('[name=remove-text-input]');
+      var $country = $('[name=country-input]');
+      var $category = $('[name=category-input]');
+      var $price = $('[name=price-input]');
+      var $btnBack = $('#btn-back');
 
       $coverImage.off().on('click', function (event) {
         var input = document.createElement('input');
@@ -129,17 +194,7 @@
         input.click();
       });
 
-      for (var i = 0; i < countrys.length; i++) {
-        var html = optionButton(countrys[i].id, countrys[i].placeholder, countrys[i].groupName, '');
-        $conturyArea.append(html);
-      }
-
-      $categoryArea.append(optionButton('category-id', '카테고리', 'category-input', 'width: 285px;'));
-
-      applyInputEvent();
-
       function onKeyup(event) {
-        console.log(event);
         if (event.currentTarget.value && event.currentTarget.value.length) {
           event.currentTarget.nextElementSibling.classList.remove('d-none');
           return;
@@ -152,16 +207,29 @@
         event.currentTarget.classList.add('d-none');
       }
 
-      function applyInputEvent() {
-        var $removeTextInput = $('[name=remove-text-input]');
+      $btnBack.off().on('click', function () {
+        history.back();
+      });
+      $removeTextInput.off().on('click', onClick);
+      $category.off().on('keyup', onKeyup);
+      $country.off().on('keyup', onKeyup);
 
-        var $country = $('[name=country-input]');
-        var $category = $('[name=category-input]');
+      $('#register-btn')
+        .off()
+        .on('click', function () {
+          var body = {
+            title: $('#textarea-title').val(),
+            imageUrl: '',
+            body: editor.html.get(),
+            price: $price.val().toLocaleLowerCase(),
+            category: $('#category-id').val(),
+            continent: $('#continent-id').val(),
+            large_country: $('#large_country-id').val(),
+            small_country: $('#small_country-id').val(),
+          };
 
-        $removeTextInput.off().on('click', onClick);
-        $category.off().on('keyup', onKeyup);
-        $country.off().on('keyup', onKeyup);
-      }
+          console.log(body);
+        });
     </script>
   </body>
 </html>
