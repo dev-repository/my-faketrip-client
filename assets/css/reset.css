@@ -250,3 +250,19 @@ form {
   margin-right: -0.9375rem;
   margin-left: -0.9375rem;
 }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}

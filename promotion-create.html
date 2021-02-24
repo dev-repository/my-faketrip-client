@@ -3,19 +3,13 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
-    <link href="/assets/css/wirte.css" rel="stylesheet" />
+    <link href="/assets/css/wirte.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/css/froala_editor.pkgd.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/js/froala_editor.pkgd.min.js"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/js/froala_editor.pkgd.min.js"></script>
   </head>
   <body>
     <div class="write-page-header">
@@ -31,7 +25,25 @@
           <div class="d-flex flex-row">
             <label class="label-cover-photo button-transparent" id="btn-cover-image">
               <i class="far fa-image"></i>
-              <span>Add Cover Photo</span>
+              <span>사진등록</span>
+            </label>
+            <label class="label-cover-photo button-transparent dropdown-category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn-category">
+              <i class="fas fa-tag"></i>
+              <span>태그</span>
+              <div class="dropdown-menu" aria-labelledby="btn-category">
+                <div class="dropdown-item">Action</div>
+                <div class="dropdown-item">Another action</div>
+                <div class="dropdown-item">Something else here</div>
+              </div>
+            </label>
+            <label class="label-cover-photo button-transparent dropdown-country" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn-country">
+              <i class="fas fa-globe-asia"></i>
+              <span>도시-국가</span>
+              <div class="dropdown-menu" aria-labelledby="btn-country">
+                <div class="dropdown-item">Action</div>
+                <div class="dropdown-item">Another action</div>
+                <div class="dropdown-item">Something else here</div>
+              </div>
             </label>
           </div>
           <div>
